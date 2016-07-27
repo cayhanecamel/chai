@@ -23,7 +23,7 @@
 
         <!-- for Debug -->
         <provider
-            android:name="jp.cayhanecamel.data.provider.AppHistoryProvider"
+            android:name="jp.cayhanecamel.champaca.data.provider.AppHistoryProvider"
             android:authorities="jp.cayhanecamel.sample.data.provider.app_history_provider"
             android:exported="true"/>
 

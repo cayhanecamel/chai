@@ -5,8 +5,8 @@ import android.app.Application;
 
 import java.util.LinkedHashMap;
 
-import jp.cayhanecamel.feature.sqlite.TableInfo;
-import jp.cayhanecamel.util.ChampacaUtil;
+import jp.cayhanecamel.champaca.feature.sqlite.TableInfo;
+import jp.cayhanecamel.champaca.util.ChampacaUtil;
 
 public class App extends Application {
 

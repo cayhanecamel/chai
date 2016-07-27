@@ -25,10 +25,10 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashSet;
 
-import jp.cayhanecamel.feature.app_history.AppHistoryUtil;
-import jp.cayhanecamel.feature.app_history.AppInfo;
-import jp.cayhanecamel.feature.main.ChampacaMainActivity;
-import jp.cayhanecamel.util.ChampacaLog;
+import jp.cayhanecamel.champaca.feature.app_history.AppHistoryUtil;
+import jp.cayhanecamel.champaca.feature.app_history.AppInfo;
+import jp.cayhanecamel.champaca.feature.main.ChampacaMainActivity;
+import jp.cayhanecamel.champaca.util.ChampacaLog;
 
 
 public class MainActivity extends AppCompatActivity {
