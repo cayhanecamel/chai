@@ -1,0 +1,68 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="jp_cayhanecamel_champaca_AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+    <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="jp_cayhanecamel_champaca_DebugTab" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/jp_cayhanecamel_champaca_debug_tab</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+
+    <style name="jp_cayhanecamel_champaca_page_title">
+        <item name="android:textSize">@dimen/jp_cayhanecamel_champaca_txt_32sp</item>
+        <item name="android:textColor">@color/jp_cayhanecamel_champaca_txt_color_gy01</item>
+    </style>
+
+    <style name="jp_cayhanecamel_champaca_txt_header_wh">
+        <item name="android:textSize">@dimen/jp_cayhanecamel_champaca_txt_24sp</item>
+        <item name="android:textColor">@color/jp_cayhanecamel_champaca_txt_color_wf01</item>
+    </style>
+
+    <style name="jp_cayhanecamel_champaca_divider">
+        <item name="android:background">@color/jp_cayhanecamel_champaca_bg_color_gy01</item>
+    </style>
+
+    <style name="jp_cayhanecamel_champaca_txt_title">
+        <item name="android:textSize">@dimen/jp_cayhanecamel_champaca_txt_20sp</item>
+        <item name="android:textColor">@color/jp_cayhanecamel_champaca_txt_color_gy01</item>
+    </style>
+
+    <style name="jp_cayhanecamel_champaca_txt_value">
+        <item name="android:textSize">@dimen/jp_cayhanecamel_champaca_txt_30sp</item>
+        <item name="android:textColor">@color/jp_cayhanecamel_champaca_txt_color_gy01</item>
+    </style>
+
+    <style name="jp_cayhanecamel_champaca_txt_section_title_gray">
+        <item name="android:textSize">@dimen/jp_cayhanecamel_champaca_txt_20sp</item>
+        <item name="android:textColor">@color/jp_cayhanecamel_champaca_txt_color_gy01</item>
+    </style>
+
+    <style name="jp_cayhanecamel_champaca_txt_main">
+        <item name="android:textSize">@dimen/jp_cayhanecamel_champaca_txt_30sp</item>
+        <item name="android:textColor">@color/jp_cayhanecamel_champaca_txt_color_gy01</item>
+    </style>
+
+    <style name="jp_cayhanecamel_champaca_menu_labels_style">
+        <item name="android:background">@drawable/jp_cayhanecamel_champaca_fab_label_background</item>
+        <item name="android:textColor">@color/jp_cayhanecamel_champaca_white</item>
+    </style>
+
+</resources>

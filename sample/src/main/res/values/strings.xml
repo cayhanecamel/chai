@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Champaca Sample</string>
+
+    <string name="boot">Boot Champaca Activity</string>
+    <string name="click_for_dummy">-- Click below to add dummy data --</string>
+
+    <string name="add_record">DB\nAdd record</string>
+    <string name="added_record">Data has been added to the user table</string>
+
+    <string name="add_app_history">App history\nAdd Log</string>
+    <string name="added_app_history">Log has been added to the App history</string>
+
+    <string name="add_app_history_api_dummy">App history\nAdd API</string>
+    <string name="added_app_history_api_dummy">Data has been added to the App history</string>
+
+    <string name="add_app_history_gcm_dummy">App history\nAdd GCM</string>
+    <string name="added_app_history_gcm_dummy">Data has been added to the App history</string>
+
+    <string name="add_shared_prefs_dummy">Shared Preferences\nAdd Default</string>
+    <string name="added_shared_prefs_dummy">Data has been added to the default Shared Preferences</string>
+
+    <string name="add_shared_prefs_named_dummy">Shared Preferences\nAdd Named</string>
+    <string name="added_shared_prefs_named_dummy">Data has been added to the named Shared Preferences</string>
+
+    <string name="add_file_explorer_internal">Files\nAdd Internally</string>
+    <string name="added_files_dummy_internal">Files have been added to the internal storage</string>
+
+    <string name="add_file_explorer_external">Files\nAdd Externally</string>
+    <string name="added_files_dummy_external">Files have been added to the external storage</string>
+
+</resources>

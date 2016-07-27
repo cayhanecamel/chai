@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="GridButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:minHeight">80dp</item>
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="GridButton.Yellow" parent="GridButton">
+        <item name="android:background">#ffffe082</item>
+    </style>
+
+    <style name="GridButton.Blue" parent="GridButton">
+        <item name="android:background">#ff81d4fa</item>
+    </style>
+
+    <style name="GridButton.Green" parent="GridButton">
+        <item name="android:background">#ff55c6a2</item>
+    </style>
+
+    <style name="GridButton.Red" parent="GridButton">
+        <item name="android:background">#ffef9a9a</item>
+    </style>
+
+</resources>

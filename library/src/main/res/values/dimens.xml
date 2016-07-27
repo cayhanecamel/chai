@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="jp_cayhanecamel_champaca_txt_16sp">8sp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_txt_20sp">10sp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_txt_24sp">12sp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_txt_30sp">15sp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_txt_32sp">16sp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_txt_38sp">19sp</dimen>
+
+    <dimen name="jp_cayhanecamel_champaca_divider">1dp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_divider_end">2dp</dimen>
+
+    <dimen name="jp_cayhanecamel_champaca_button_w_margin">20dp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_button_h_margin">22dp</dimen>
+
+    <dimen name="jp_cayhanecamel_champaca_sqlite_cell_left_right_margin">16dp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_sqlite_cell_top_margin">8dp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_sqlite_cell_bottom_margin">2dp</dimen>
+
+    <dimen name="jp_cayhanecamel_champaca_floating_button_padding">60dp</dimen>
+
+    <dimen name="jp_cayhanecamel_champaca_view_parts_left_right_padding">26dp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_view_parts_top_padding">24dp</dimen>
+
+    <dimen name="jp_cayhanecamel_champaca_toolbar_elevation">4dp</dimen>
+
+    <dimen name="jp_cayhanecamel_champaca_table_cell_lr_padding">24dp</dimen>
+    <dimen name="jp_cayhanecamel_champaca_table_cell_tb_padding">10dp</dimen>
+
+</resources>

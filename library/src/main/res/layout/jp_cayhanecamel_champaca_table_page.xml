@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jp_cayhanecamel_champaca_pageLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/jp_cayhanecamel_champaca_flat_page_button"
+            android:textSize="@dimen/jp_cayhanecamel_champaca_txt_24sp"
+            android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy02"
+            android:text="@string/jp_cayhanecamel_champaca_back"
+            android:id="@+id/jp_cayhanecamel_champaca_back"/>
+
+        <TextView
+            android:id="@+id/jp_cayhanecamel_champaca_pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/jp_cayhanecamel_champaca_txt_32sp"
+            android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy01"
+            android:text="1/1"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/jp_cayhanecamel_champaca_flat_page_button"
+            android:textSize="@dimen/jp_cayhanecamel_champaca_txt_24sp"
+            android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy02"
+            android:text="@string/jp_cayhanecamel_champaca_next"
+            android:id="@+id/jp_cayhanecamel_champaca_next"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/jp_cayhanecamel_champaca_padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/jp_cayhanecamel_champaca_floating_button_padding"
+        android:layout_alignParentBottom="true"/>
+
+
+</LinearLayout>

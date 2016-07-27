@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/jp_cayhanecamel_champaca_white"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/jp_cayhanecamel_champaca_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/jp_cayhanecamel_champaca_action_bar_color"/>
+
+    <jp.cayhanecamel.widget.PartsSelectView
+        android:id="@+id/jp_cayhanecamel_champaca_app_history_type"
+        android:background="@drawable/jp_cayhanecamel_champaca_common_item_selector_background"
+        android:layout_marginTop="@dimen/jp_cayhanecamel_champaca_view_parts_top_padding"
+        android:layout_marginLeft="@dimen/jp_cayhanecamel_champaca_view_parts_left_right_padding"
+        android:layout_marginRight="@dimen/jp_cayhanecamel_champaca_view_parts_left_right_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <jp.cayhanecamel.widget.PartsSelectView
+        android:id="@+id/jp_cayhanecamel_champaca_app_history_name"
+        android:background="@drawable/jp_cayhanecamel_champaca_common_item_selector_background"
+        android:layout_marginTop="@dimen/jp_cayhanecamel_champaca_view_parts_top_padding"
+        android:layout_marginLeft="@dimen/jp_cayhanecamel_champaca_view_parts_left_right_padding"
+        android:layout_marginRight="@dimen/jp_cayhanecamel_champaca_view_parts_left_right_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <jp.cayhanecamel.widget.PartsEditView
+        android:id="@+id/jp_cayhanecamel_champaca_app_history_limit"
+        android:layout_marginTop="@dimen/jp_cayhanecamel_champaca_view_parts_top_padding"
+        android:layout_marginLeft="@dimen/jp_cayhanecamel_champaca_view_parts_left_right_padding"
+        android:layout_marginRight="@dimen/jp_cayhanecamel_champaca_view_parts_left_right_padding"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

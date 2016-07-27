@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="jp.cayhanecamel.champaca.sample">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="jp.cayhanecamel.champaca.sample.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="jp.cayhanecamel.champaca.sample.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <!-- for Debug -->
+        <provider
+            android:name="jp.cayhanecamel.data.provider.AppHistoryProvider"
+            android:authorities="jp.cayhanecamel.sample.data.provider.app_history_provider"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>
