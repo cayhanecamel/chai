@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 24
@@ -27,5 +28,9 @@ dependencies {
     compile "com.android.support:design:$SupportLibraryVersion"
 
     compile 'com.getbase:floatingactionbutton:1.9.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
+}
+repositories {
+    mavenCentral()
 }

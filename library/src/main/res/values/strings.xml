@@ -16,7 +16,7 @@
     <string name="jp_cayhanecamel_champaca_limit">limit</string>
     <string name="jp_cayhanecamel_champaca_unselect">unselect</string>
     <string name="jp_cayhanecamel_champaca_deselect_all">deselect all</string>
-    <string name="jp_cayhanecamel_champaca_no_app_history">There is no App history</string>
+    <string name="jp_cayhanecamel_champaca_no_app_history">There is no jp.cayhanecamel.champaca.sample.App history</string>
 
     <string name="jp_cayhanecamel_champaca_apk_info">APK Info</string>
     <string name="jp_cayhanecamel_champaca_device_info">Device Info</string>
@@ -33,14 +33,14 @@
     <string name="jp_cayhanecamel_champaca_ok">ok</string>
 
 
-    <string name="jp_cayhanecamel_champaca_app_history">App History</string>
-    <string name="jp_cayhanecamel_champaca_app_info">App Info</string>
+    <string name="jp_cayhanecamel_champaca_app_history">jp.cayhanecamel.champaca.sample.App History</string>
+    <string name="jp_cayhanecamel_champaca_app_info">jp.cayhanecamel.champaca.sample.App Info</string>
     <string name="jp_cayhanecamel_champaca_sqlite_none">SQLite</string>
     <string name="jp_cayhanecamel_champaca_sqlite">SQLite(%s)</string>
     <string name="jp_cayhanecamel_champaca_shared_prefs">Shared Prefs</string>
     <string name="jp_cayhanecamel_champaca_file_explorer">File Explorer</string>
 
-    <string name="jp_cayhanecamel_champaca_app_history_filter">App History Filter</string>
+    <string name="jp_cayhanecamel_champaca_app_history_filter">jp.cayhanecamel.champaca.sample.App History Filter</string>
 
     <string name="jp_cayhanecamel_champaca_shared_prefs_not_use">Shared Preference is not used</string>
     <string name="jp_cayhanecamel_champaca_sqlite_not_specified">SQLite is not specified</string>
