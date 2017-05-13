@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jp_cayhanecamel_chai_white">
+
+    <TextView
+        android:id="@+id/jp_cayhanecamel_chai_empty"
+        style="@style/jp_cayhanecamel_chai_txt_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/jp_cayhanecamel_chai_no_app_history"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/jp_cayhanecamel_chai_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:fastScrollEnabled="true"
+        android:listSelector="@android:color/transparent" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/jp_cayhanecamel_chai_multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        fab:fab_addButtonColorNormal="@color/jp_cayhanecamel_chai_white"
+        fab:fab_addButtonColorPressed="@color/jp_cayhanecamel_chai_white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/jp_cayhanecamel_chai_half_black"
+        fab:fab_labelStyle="@style/jp_cayhanecamel_chai_menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/jp_cayhanecamel_chai_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/jp_cayhanecamel_chai_white"
+            fab:fab_colorPressed="@color/jp_cayhanecamel_chai_white_pressed"
+            fab:fab_icon="@drawable/jp_cayhanecamel_chai_ic_filter"
+            fab:fab_title="@string/jp_cayhanecamel_chai_filter" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/jp_cayhanecamel_chai_export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/jp_cayhanecamel_chai_white"
+            fab:fab_colorPressed="@color/jp_cayhanecamel_chai_white_pressed"
+            fab:fab_icon="@drawable/jp_cayhanecamel_chai_ic_export"
+            fab:fab_title="@string/jp_cayhanecamel_chai_export" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/jp_cayhanecamel_chai_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/jp_cayhanecamel_chai_white"
+            fab:fab_colorPressed="@color/jp_cayhanecamel_chai_white_pressed"
+            fab:fab_icon="@drawable/jp_cayhanecamel_chai_ic_delete_grey600_24dp"
+            fab:fab_title="@string/jp_cayhanecamel_chai_delete" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>
+
+

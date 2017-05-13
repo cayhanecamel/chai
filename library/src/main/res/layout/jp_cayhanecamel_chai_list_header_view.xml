@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:background="@color/jp_cayhanecamel_chai_txt_color_gy01"
+                android:layout_width="match_parent"
+                android:minHeight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/jp_cayhanecamel_chai_title"
+        style="@style/jp_cayhanecamel_chai_txt_header_wh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

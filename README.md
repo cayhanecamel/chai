@@ -1,8 +1,8 @@
-Champaca
+Chai
 ====
 Android向けの開発時に役立つライブラリ郡です。  
 開発時に確認したいアプリ内部のデータを手軽に確認することができます。  
-ChampacaはSQLiteを内部で利用していますが、プロダクト側と別のDBを利用しています。  
+ChaiはSQLiteを内部で利用していますが、プロダクト側と別のDBを利用しています。  
   
 
 機能一覧
@@ -18,7 +18,7 @@ ChampacaはSQLiteを内部で利用していますが、プロダクト側と別
 使い方
 ---
 
-### Champacaセットアップ
+### Chaiセットアップ
 ```
 DebugUtil.setup(this.getApplicationContext(), MyOpenHelper.DB_NAME, 
                 MyOpenHelper.DB_VERSION, MyApplication.IS_DEBUGGABLE);
@@ -35,10 +35,10 @@ startActivity(debug)
     
 App historyについて
 ------
-Champaca経由で出力されたログは全てApp history画面で見ることができます。   
+Chai経由で出力されたログは全てApp history画面で見ることができます。   
 出力方法は2種類で、両クラスとも出力されたログはDBに保存され後から閲覧可能です。  
 
-ChampacaLog
+ChaiLog
 ------   
 Logcatと同じ優先度でApp historyへログを出力するクラスです。  
 Logcat自体とは無関係です。  

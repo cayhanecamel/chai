@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Champaca Sample</string>
+    <string name="app_name">Chai Sample</string>
 
-    <string name="boot">Boot Champaca Activity</string>
+    <string name="boot">Boot Chai Activity</string>
     <string name="click_for_dummy">-- Click below to add dummy data --</string>
 
     <string name="add_record">DB\nAdd record</string>
