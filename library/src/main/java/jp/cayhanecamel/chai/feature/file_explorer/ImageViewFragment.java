@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.file_explorer;
+package jp.cayhanecamel.chai.feature.file_explorer;
 
 import android.app.Dialog;
 import android.graphics.Bitmap;
@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 import java.io.File;
 
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.util.ChaiUtil;
+import jp.cayhanecamel.chai.R;
 
 public class ImageViewFragment extends DialogFragment {
 
@@ -33,11 +33,11 @@ public class ImageViewFragment extends DialogFragment {
 
         if (!imageFile.exists()) {
             dismissAllowingStateLoss();
-            Toast.makeText(ChampacaUtil.getApplicationContext(), "file not found!", Toast.LENGTH_LONG).show();
+            Toast.makeText(ChaiUtil.getApplicationContext(), "file not found!", Toast.LENGTH_LONG).show();
         }
 
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        View view = inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_image_viewer, null,
+        View view = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_image_viewer, null,
                 false);
 
         ImageView image = (ImageView) view.findViewById(R.id.jp_cayhanecamel_champaca_image);

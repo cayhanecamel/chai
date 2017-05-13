@@ -1,10 +1,10 @@
-package jp.cayhanecamel.champaca.data;
+package jp.cayhanecamel.chai.data;
 
 
 import java.util.Arrays;
 import java.util.List;
 
-public class ChampacaConst {
+public class ChaiConst {
 
     public static final List<String> ignoreList = Arrays.asList(new String[]{"android_metadata", "sqlite_sequence"});
 

@@ -19,7 +19,7 @@
             android:background="@drawable/jp_cayhanecamel_champaca_flat_page_button"
             android:textSize="@dimen/jp_cayhanecamel_champaca_txt_24sp"
             android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy02"
-            android:text="@string/jp_cayhanecamel_champaca_back"
+            android:text="@string/jp_cayhanecamel_chai_back"
             android:id="@+id/jp_cayhanecamel_champaca_back"/>
 
         <TextView
@@ -38,7 +38,7 @@
             android:background="@drawable/jp_cayhanecamel_champaca_flat_page_button"
             android:textSize="@dimen/jp_cayhanecamel_champaca_txt_24sp"
             android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy02"
-            android:text="@string/jp_cayhanecamel_champaca_next"
+            android:text="@string/jp_cayhanecamel_chai_next"
             android:id="@+id/jp_cayhanecamel_champaca_next"/>
     </LinearLayout>
 

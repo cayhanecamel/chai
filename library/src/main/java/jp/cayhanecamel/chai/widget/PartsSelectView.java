@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.widget;
+package jp.cayhanecamel.chai.widget;
 
 
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.R;
 
 
 public class PartsSelectView extends LinearLayout {
@@ -28,7 +28,7 @@ public class PartsSelectView extends LinearLayout {
 
     private void init() {
         setOrientation(VERTICAL);
-        inflate(getContext(), R.layout.jp_cayhanecamel_champaca_view_parts_select, this);
+        inflate(getContext(), R.layout.jp_cayhanecamel_chai_view_parts_select, this);
         title = (TextView) findViewById(R.id.title);
         value = (TextView) findViewById(R.id.value);
     }

@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca;
+package jp.cayhanecamel.chai;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

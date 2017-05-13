@@ -1,34 +1,34 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="jp.cayhanecamel.champaca">
+          package="jp.cayhanecamel.chai">
 
     <application>
 
         <activity
-            android:name=".feature.main.ChampacaMainActivity"
+            android:name="jp.cayhanecamel.chai.feature.main.ChaiMainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="stateHidden"/>
 
         <activity
-            android:name=".feature.shared_preference.SharedPrefsActivity"
+            android:name="jp.cayhanecamel.chai.feature.shared_preference.SharedPrefsActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".feature.sqlite.TableActivity"
+            android:name="jp.cayhanecamel.chai.feature.sqlite.TableActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
         <activity
-            android:name=".feature.app_history.AppHistoryActivity"
+            android:name="jp.cayhanecamel.chai.feature.app_history.AppHistoryActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="stateHidden"/>
 
         <activity
-            android:name=".feature.app_history.AppHistorySettingActivity"
+            android:name="jp.cayhanecamel.chai.feature.app_history.AppHistorySettingActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="stateHidden"/>
 
         <activity
-            android:name=".feature.file_explorer.ExplorerActivity"
+            android:name="jp.cayhanecamel.chai.feature.file_explorer.ExplorerActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"/>
 

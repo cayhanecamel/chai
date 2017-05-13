@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.app_history;
+package jp.cayhanecamel.chai.feature.app_history;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -37,16 +37,16 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import jp.cayhanecamel.champaca.base.ProductInfos;
-import jp.cayhanecamel.champaca.base.recycler.CollectionRecyclerAdapter;
-import jp.cayhanecamel.champaca.base.recycler.CursorRecyclerAdapter;
-import jp.cayhanecamel.champaca.base.recycler.ItemBindable;
-import jp.cayhanecamel.champaca.base.recycler.PositionBindableViewHolder;
-import jp.cayhanecamel.champaca.data.ChampacaConfig;
-import jp.cayhanecamel.champaca.data.provider.AppHistory;
-import jp.cayhanecamel.champaca.util.ChampacaLog;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.base.ProductInfos;
+import jp.cayhanecamel.chai.base.recycler.CollectionRecyclerAdapter;
+import jp.cayhanecamel.chai.base.recycler.CursorRecyclerAdapter;
+import jp.cayhanecamel.chai.base.recycler.ItemBindable;
+import jp.cayhanecamel.chai.base.recycler.PositionBindableViewHolder;
+import jp.cayhanecamel.chai.data.ChaiConfig;
+import jp.cayhanecamel.chai.data.provider.AppHistory;
+import jp.cayhanecamel.chai.util.ChaiLog;
+import jp.cayhanecamel.chai.util.ChaiUtil;
+import jp.cayhanecamel.chai.R;
 
 
 public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffsetChangedListener {
@@ -63,7 +63,7 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_app_history, container, false);
+        View view = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_app_history, container, false);
 
         mMultipleActions = (FloatingActionsMenu) view.findViewById(R.id.jp_cayhanecamel_champaca_multiple_actions);
         FloatingActionButton filter = (FloatingActionButton) view.findViewById(R.id.jp_cayhanecamel_champaca_filter);
@@ -108,13 +108,13 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
 
                 new AlertDialog.Builder(getActivity())
                         .setMessage(message)
-                        .setPositiveButton(R.string.jp_cayhanecamel_champaca_close,
+                        .setPositiveButton(R.string.jp_cayhanecamel_chai_close,
                                 new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                     }
                                 })
-                        .setNeutralButton(R.string.jp_cayhanecamel_champaca_share,
+                        .setNeutralButton(R.string.jp_cayhanecamel_chai_share,
                                 new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog,
@@ -154,7 +154,7 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
     }
 
     private void export() {
-        Cursor query = ChampacaUtil
+        Cursor query = ChaiUtil
                 .getApplicationContext()
                 .getContentResolver()
                 .query(AppHistory.CONTENT_URI, null, null, null,
@@ -184,7 +184,7 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
                 writer.close();
             }
         } catch (IOException e) {
-            ChampacaLog.e(e);
+            ChaiLog.e(e);
         } finally {
             query.close();
         }
@@ -202,7 +202,7 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
     }
 
     private void delete() {
-        ChampacaUtil.getApplicationContext().getContentResolver()
+        ChaiUtil.getApplicationContext().getContentResolver()
                 .delete(AppHistory.CONTENT_URI, null, null);
     }
 
@@ -224,8 +224,8 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
                 selectLikeList.add("%" + mCondtion + "%");
             }
 
-            if (!ChampacaConfig.getAppHistoryTypeFilter().equals(getNoFilter())) {
-                selectTypeList = Arrays.asList(ChampacaConfig.getAppHistoryTypeFilter().split(","));
+            if (!ChaiConfig.getAppHistoryTypeFilter().equals(getNoFilter())) {
+                selectTypeList = Arrays.asList(ChaiConfig.getAppHistoryTypeFilter().split(","));
 
                 StringBuilder typesPrepare = new StringBuilder();
                 for (String type : selectTypeList) {
@@ -247,8 +247,8 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
                 }
             }
 
-            if (!ChampacaConfig.getAppHistoryNameFilter().equals(getNoFilter())) {
-                selectNameList = Arrays.asList(ChampacaConfig.getAppHistoryNameFilter().split(","));
+            if (!ChaiConfig.getAppHistoryNameFilter().equals(getNoFilter())) {
+                selectNameList = Arrays.asList(ChaiConfig.getAppHistoryNameFilter().split(","));
 
                 StringBuilder namesPrepare = new StringBuilder();
                 for (String name : selectNameList) {
@@ -283,10 +283,10 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
 
             selectionArgs = selectionArgsList.toArray(new String[selectionArgsList.size()]);
 
-            return new CursorLoader(ChampacaUtil.getApplicationContext(),
+            return new CursorLoader(ChaiUtil.getApplicationContext(),
                     AppHistory.CONTENT_URI, null, selection.toString(),
                     selectionArgs,
-                    AppHistory.COLUMN_ID + " DESC LIMIT " + ChampacaConfig.getAppHistoryLimit());
+                    AppHistory.COLUMN_ID + " DESC LIMIT " + ChaiConfig.getAppHistoryLimit());
         }
 
         @Override
@@ -361,7 +361,7 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
 
         public AppHistoryItemView(Context context) {
             super(context);
-            inflate(context, R.layout.jp_cayhanecamel_champaca_list_item_app_history, this);
+            inflate(context, R.layout.jp_cayhanecamel_chai_list_item_app_history, this);
         }
 
         @Override
@@ -420,7 +420,7 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
     }
 
     public static String getNoFilter() {
-        return ChampacaUtil.getApplicationContext().getString(R.string.jp_cayhanecamel_champaca_unselect);
+        return ChaiUtil.getApplicationContext().getString(R.string.jp_cayhanecamel_chai_unselect);
     }
 
     @Override

@@ -1,10 +1,10 @@
-package jp.cayhanecamel.champaca.base;
+package jp.cayhanecamel.chai.base;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-import jp.cayhanecamel.champaca.feature.sqlite.TableInfo;
+import jp.cayhanecamel.chai.feature.sqlite.TableInfo;
 
 public class ProductInfos {
 

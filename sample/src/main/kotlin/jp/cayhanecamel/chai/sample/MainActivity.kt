@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.sample
+package jp.cayhanecamel.chai.sample
 
 import android.content.ContentValues
 import android.content.Context
@@ -13,10 +13,10 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import jp.cayhanecamel.champaca.feature.app_history.AppHistoryUtil
-import jp.cayhanecamel.champaca.feature.app_history.AppInfo
-import jp.cayhanecamel.champaca.feature.main.ChampacaMainActivity
-import jp.cayhanecamel.champaca.util.ChampacaLog
+import jp.cayhanecamel.chai.feature.app_history.AppHistoryUtil
+import jp.cayhanecamel.chai.feature.app_history.AppInfo
+import jp.cayhanecamel.chai.feature.main.ChaiMainActivity
+import jp.cayhanecamel.chai.util.ChaiLog
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.File
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         toolbar.setTitle(R.string.jp_cayhanecamel_champaca_app_name)
 
-        findViewById(R.id.boot).setOnClickListener { this@MainActivity.startActivity(Intent(applicationContext, ChampacaMainActivity::class.java)) }
+        findViewById(R.id.boot).setOnClickListener { this@MainActivity.startActivity(Intent(applicationContext, ChaiMainActivity::class.java)) }
 
         findViewById(R.id.add_record).setOnClickListener {
             mySQLiteOpenHelper = MySQLiteOpenHelper(applicationContext)
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById(R.id.add_app_history).setOnClickListener {
-            ChampacaLog.i("MainActivity#add_log clicked")
+            ChaiLog.i("MainActivity#add_log clicked")
             Toast.makeText(applicationContext, getString(R.string.added_app_history), Toast.LENGTH_SHORT).show()
         }
 
@@ -178,7 +178,7 @@ class MainActivity : AppCompatActivity() {
 
 
         if (id == R.id.action_boot) {
-            startActivity(Intent(applicationContext, ChampacaMainActivity::class.java))
+            startActivity(Intent(applicationContext, ChaiMainActivity::class.java))
             return true
         }
 

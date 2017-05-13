@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.sqlite;
+package jp.cayhanecamel.chai.feature.sqlite;
 
 public class TableInfo {
 

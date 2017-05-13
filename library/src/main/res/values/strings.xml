@@ -3,53 +3,53 @@
     <string name="jp_cayhanecamel_champaca_app_name">Champaca</string>
 
     <!-- shared_prefs -->
-    <string name="jp_cayhanecamel_champaca_shared_prefs_edit_btn">Update</string>
-    <string name="jp_cayhanecamel_champaca_shared_prefs_edit_true">True</string>
-    <string name="jp_cayhanecamel_champaca_shared_prefs_edit_false">False</string>
-    <string name="jp_cayhanecamel_champaca_shared_prefs_delete_btn">%1$sを削除</string>
-    <string name="jp_cayhanecamel_champaca_shared_prefs_delete_confirm">本当に削除しますか？</string>
+    <string name="jp_cayhanecamel_chai_shared_prefs_edit_btn">Update</string>
+    <string name="jp_cayhanecamel_chai_shared_prefs_edit_true">True</string>
+    <string name="jp_cayhanecamel_chai_shared_prefs_edit_false">False</string>
+    <string name="jp_cayhanecamel_chai_shared_prefs_delete_btn">%1$sを削除</string>
+    <string name="jp_cayhanecamel_chai_shared_prefs_delete_confirm">本当に削除しますか？</string>
 
-    <string name="jp_cayhanecamel_champaca_export">export</string>
-    <string name="jp_cayhanecamel_champaca_delete_app_history">delete history</string>
-    <string name="jp_cayhanecamel_champaca_type">type</string>
-    <string name="jp_cayhanecamel_champaca_name">name</string>
-    <string name="jp_cayhanecamel_champaca_limit">limit</string>
-    <string name="jp_cayhanecamel_champaca_unselect">unselect</string>
-    <string name="jp_cayhanecamel_champaca_deselect_all">deselect all</string>
-    <string name="jp_cayhanecamel_champaca_no_app_history">There is no jp.cayhanecamel.champaca.sample.App history</string>
+    <string name="jp_cayhanecamel_chai_export">export</string>
+    <string name="jp_cayhanecamel_chai_delete_app_history">delete history</string>
+    <string name="jp_cayhanecamel_chai_type">type</string>
+    <string name="jp_cayhanecamel_chai_name">name</string>
+    <string name="jp_cayhanecamel_chai_limit">limit</string>
+    <string name="jp_cayhanecamel_chai_unselect">unselect</string>
+    <string name="jp_cayhanecamel_chai_deselect_all">deselect all</string>
+    <string name="jp_cayhanecamel_chai_no_app_history">There is no jp.cayhanecamel.champaca.sample.App history</string>
 
-    <string name="jp_cayhanecamel_champaca_apk_info">APK Info</string>
-    <string name="jp_cayhanecamel_champaca_device_info">Device Info</string>
+    <string name="jp_cayhanecamel_chai_apk_info">APK Info</string>
+    <string name="jp_cayhanecamel_chai_device_info">Device Info</string>
 
-    <string name="jp_cayhanecamel_champaca_filter">filter</string>
-    <string name="jp_cayhanecamel_champaca_insert">insert</string>
-    <string name="jp_cayhanecamel_champaca_delete">delete</string>
-    <string name="jp_cayhanecamel_champaca_setting">setting</string>
+    <string name="jp_cayhanecamel_chai_filter">filter</string>
+    <string name="jp_cayhanecamel_chai_insert">insert</string>
+    <string name="jp_cayhanecamel_chai_delete">delete</string>
+    <string name="jp_cayhanecamel_chai_setting">setting</string>
 
-    <string name="jp_cayhanecamel_champaca_back">back</string>
-    <string name="jp_cayhanecamel_champaca_next">next</string>
-    <string name="jp_cayhanecamel_champaca_close">close</string>
-    <string name="jp_cayhanecamel_champaca_share">share</string>
-    <string name="jp_cayhanecamel_champaca_ok">ok</string>
+    <string name="jp_cayhanecamel_chai_back">back</string>
+    <string name="jp_cayhanecamel_chai_next">next</string>
+    <string name="jp_cayhanecamel_chai_close">close</string>
+    <string name="jp_cayhanecamel_chai_share">share</string>
+    <string name="jp_cayhanecamel_chai_ok">ok</string>
 
 
-    <string name="jp_cayhanecamel_champaca_app_history">jp.cayhanecamel.champaca.sample.App History</string>
-    <string name="jp_cayhanecamel_champaca_app_info">jp.cayhanecamel.champaca.sample.App Info</string>
-    <string name="jp_cayhanecamel_champaca_sqlite_none">SQLite</string>
-    <string name="jp_cayhanecamel_champaca_sqlite">SQLite(%s)</string>
-    <string name="jp_cayhanecamel_champaca_shared_prefs">Shared Prefs</string>
-    <string name="jp_cayhanecamel_champaca_file_explorer">File Explorer</string>
+    <string name="jp_cayhanecamel_chai_app_history">jp.cayhanecamel.champaca.sample.App History</string>
+    <string name="jp_cayhanecamel_chai_app_info">jp.cayhanecamel.champaca.sample.App Info</string>
+    <string name="jp_cayhanecamel_chai_sqlite_none">SQLite</string>
+    <string name="jp_cayhanecamel_chai_sqlite">SQLite(%s)</string>
+    <string name="jp_cayhanecamel_chai_shared_prefs">Shared Prefs</string>
+    <string name="jp_cayhanecamel_chai_file_explorer">File Explorer</string>
 
-    <string name="jp_cayhanecamel_champaca_app_history_filter">jp.cayhanecamel.champaca.sample.App History Filter</string>
+    <string name="jp_cayhanecamel_chai_app_history_filter">jp.cayhanecamel.champaca.sample.App History Filter</string>
 
-    <string name="jp_cayhanecamel_champaca_shared_prefs_not_use">Shared Preference is not used</string>
-    <string name="jp_cayhanecamel_champaca_sqlite_not_specified">SQLite is not specified</string>
+    <string name="jp_cayhanecamel_chai_shared_prefs_not_use">Shared Preference is not used</string>
+    <string name="jp_cayhanecamel_chai_sqlite_not_specified">SQLite is not specified</string>
 
-    <string name="jp_cayhanecamel_champaca_explorer_data_not_found">データがありません</string>
-    <string name="jp_cayhanecamel_champaca_explorer_deletion_completed">%1$sを削除しました</string>
-    <string name="jp_cayhanecamel_champaca_explorer_deletion_failed">%1$sの削除に失敗しました</string>
-    <string name="jp_cayhanecamel_champaca_explorer_not_implemented_yet">未実装です</string>
-    <string name="jp_cayhanecamel_champaca_explorer_opener_not_found">このファイルを開くアプリがありません</string>
+    <string name="jp_cayhanecamel_chai_explorer_data_not_found">データがありません</string>
+    <string name="jp_cayhanecamel_chai_explorer_deletion_completed">%1$sを削除しました</string>
+    <string name="jp_cayhanecamel_chai_explorer_deletion_failed">%1$sの削除に失敗しました</string>
+    <string name="jp_cayhanecamel_chai_explorer_not_implemented_yet">未実装です</string>
+    <string name="jp_cayhanecamel_chai_explorer_opener_not_found">このファイルを開くアプリがありません</string>
 
 
 </resources>

@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.shared_preference;
+package jp.cayhanecamel.chai.feature.shared_preference;
 
 
 import android.app.AlertDialog;
@@ -35,10 +35,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
 
-import jp.cayhanecamel.champaca.feature.main.CommonRecyclerAdapter;
-import jp.cayhanecamel.champaca.feature.main.ItemDto;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.feature.main.CommonRecyclerAdapter;
+import jp.cayhanecamel.chai.feature.main.ItemDto;
+import jp.cayhanecamel.chai.util.ChaiUtil;
+import jp.cayhanecamel.chai.R;
 
 
 public class SharedPrefsFragment extends Fragment {
@@ -61,14 +61,14 @@ public class SharedPrefsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_tables, container, false);
+        return inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_tables, container, false);
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_champaca_scroll);
-        mListView.setLayoutManager(new LinearLayoutManager(ChampacaUtil.getApplicationContext()));
+        mListView.setLayoutManager(new LinearLayoutManager(ChaiUtil.getApplicationContext()));
 
         Bundle args = getArguments();
         if (args == null) {
@@ -200,7 +200,7 @@ public class SharedPrefsFragment extends Fragment {
 
     private void deletePrefs() {
         new AlertDialog.Builder(getActivity())
-                .setMessage(getActivity().getString(R.string.jp_cayhanecamel_champaca_shared_prefs_delete_confirm))
+                .setMessage(getActivity().getString(R.string.jp_cayhanecamel_chai_shared_prefs_delete_confirm))
                 .setPositiveButton("Delete",
                         new DialogInterface.OnClickListener() {
                             @Override

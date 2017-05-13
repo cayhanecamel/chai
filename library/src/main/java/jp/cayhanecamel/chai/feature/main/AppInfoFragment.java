@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.main;
+package jp.cayhanecamel.chai.feature.main;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -29,10 +29,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import jp.cayhanecamel.champaca.base.ProductInfos;
-import jp.cayhanecamel.champaca.data.ChampacaConfig;
-import jp.cayhanecamel.champaca.util.ChampacaLog;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.base.ProductInfos;
+import jp.cayhanecamel.chai.data.ChaiConfig;
+import jp.cayhanecamel.chai.util.ChaiLog;
+import jp.cayhanecamel.chai.R;
 
 public class AppInfoFragment extends Fragment implements AppBarLayout.OnOffsetChangedListener {
 
@@ -45,7 +45,7 @@ public class AppInfoFragment extends Fragment implements AppBarLayout.OnOffsetCh
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_app_info, container, false);
+        return inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_app_info, container, false);
     }
 
     @Override
@@ -69,12 +69,12 @@ public class AppInfoFragment extends Fragment implements AppBarLayout.OnOffsetCh
         List<ItemDto> list = new ArrayList<>();
 
         list.add(new ItemDto(ItemDto.Type.Blank, "", ""));
-        list.add(new ItemDto(ItemDto.Type.Header, getString(R.string.jp_cayhanecamel_champaca_apk_info), ""));
+        list.add(new ItemDto(ItemDto.Type.Header, getString(R.string.jp_cayhanecamel_chai_apk_info), ""));
         list.addAll(getApkInfos());
         list.add(new ItemDto(ItemDto.Type.Blank, "", ""));
 
 
-        list.add(new ItemDto(ItemDto.Type.Header, getString(R.string.jp_cayhanecamel_champaca_device_info), ""));
+        list.add(new ItemDto(ItemDto.Type.Header, getString(R.string.jp_cayhanecamel_chai_device_info), ""));
         list.addAll(getDeviceInfos());
         list.add(new ItemDto(ItemDto.Type.Blank, "", ""));
 
@@ -97,7 +97,7 @@ public class AppInfoFragment extends Fragment implements AppBarLayout.OnOffsetCh
             return;
         }
 
-        list.add(new ItemDto(ItemDto.Type.Header, getString(R.string.jp_cayhanecamel_champaca_app_info), ""));
+        list.add(new ItemDto(ItemDto.Type.Header, getString(R.string.jp_cayhanecamel_chai_app_info), ""));
         list.addAll(getAppInfos());
         list.get(list.size() - 1).type = ItemDto.Type.ContentEnd;
     }
@@ -112,7 +112,7 @@ public class AppInfoFragment extends Fragment implements AppBarLayout.OnOffsetCh
                             PackageManager.GET_ACTIVITIES);
             list.add(new ItemDto(ItemDto.Type.Content, "Version Name", packageInfo.versionName));
             list.add(new ItemDto(ItemDto.Type.Content, "Version Code", packageInfo.versionCode));
-            list.add(new ItemDto(ItemDto.Type.Content, "Version Code History", ChampacaConfig
+            list.add(new ItemDto(ItemDto.Type.Content, "Version Code History", ChaiConfig
                     .getVersionCodeHistory()));
             list.add(new ItemDto(ItemDto.Type.ContentEnd, "Package", getActivity().getPackageName()));
 
@@ -201,7 +201,7 @@ public class AppInfoFragment extends Fragment implements AppBarLayout.OnOffsetCh
                 writer.close();
             }
         } catch (IOException e) {
-            ChampacaLog.e(e);
+            ChaiLog.e(e);
         }
 
         String[] addresses = {

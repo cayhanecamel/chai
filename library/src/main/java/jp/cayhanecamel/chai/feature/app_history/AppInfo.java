@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.app_history;
+package jp.cayhanecamel.chai.feature.app_history;
 
 public class AppInfo {
 

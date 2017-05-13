@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.file_explorer;
+package jp.cayhanecamel.chai.feature.file_explorer;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -17,9 +17,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import jp.cayhanecamel.champaca.util.ChampacaLog;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.util.ChaiLog;
+import jp.cayhanecamel.chai.util.ChaiUtil;
+import jp.cayhanecamel.chai.R;
 
 public class TextViewFragment extends DialogFragment {
 
@@ -35,12 +35,12 @@ public class TextViewFragment extends DialogFragment {
 
         if (!textFile.exists()) {
             dismissAllowingStateLoss();
-            Toast.makeText(ChampacaUtil.getApplicationContext(), "file not found!", Toast.LENGTH_LONG).show();
+            Toast.makeText(ChaiUtil.getApplicationContext(), "file not found!", Toast.LENGTH_LONG).show();
         }
 
 
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        View view = inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_text_view, null,
+        View view = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_text_view, null,
                 false);
 
         TextView text = (TextView) view.findViewById(R.id.jp_cayhanecamel_champaca_text);
@@ -61,15 +61,15 @@ public class TextViewFragment extends DialogFragment {
 
 
         } catch (FileNotFoundException e) {
-            ChampacaLog.e(e);
+            ChaiLog.e(e);
         } catch (IOException e) {
-            ChampacaLog.e(e);
+            ChaiLog.e(e);
         } finally {
             try {
                 br.close();
                 fr.close();
             } catch (IOException e) {
-                ChampacaLog.e(e);
+                ChaiLog.e(e);
             }
 
         }

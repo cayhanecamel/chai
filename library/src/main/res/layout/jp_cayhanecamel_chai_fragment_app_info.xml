@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             fab:fab_icon="@drawable/jp_cayhanecamel_champaca_ic_export"
             fab:fab_colorNormal="@color/jp_cayhanecamel_champaca_white"
-            fab:fab_title="@string/jp_cayhanecamel_champaca_export"
+            fab:fab_title="@string/jp_cayhanecamel_chai_export"
             fab:fab_colorPressed="@color/jp_cayhanecamel_champaca_white_pressed"/>
 
 

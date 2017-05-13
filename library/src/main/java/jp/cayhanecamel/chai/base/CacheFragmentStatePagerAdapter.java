@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.base;
+package jp.cayhanecamel.chai.base;
 
 import android.os.Bundle;
 import android.os.Parcelable;

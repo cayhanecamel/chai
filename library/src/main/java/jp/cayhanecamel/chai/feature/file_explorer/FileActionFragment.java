@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.file_explorer;
+package jp.cayhanecamel.chai.feature.file_explorer;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

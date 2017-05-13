@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.main;
+package jp.cayhanecamel.chai.feature.main;
 
 public class ItemDto {
 

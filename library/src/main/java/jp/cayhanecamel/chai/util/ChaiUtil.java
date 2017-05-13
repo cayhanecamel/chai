@@ -1,18 +1,18 @@
-package jp.cayhanecamel.champaca.util;
+package jp.cayhanecamel.chai.util;
 
 import android.content.Context;
 
-import jp.cayhanecamel.champaca.base.DbInfo;
-import jp.cayhanecamel.champaca.base.ProductInfos;
-import jp.cayhanecamel.champaca.data.provider.AppHistory;
-import jp.cayhanecamel.champaca.db.ChampacaOpenHelper;
-import jp.cayhanecamel.champaca.feature.sqlite.TableInfo;
+import jp.cayhanecamel.chai.base.DbInfo;
+import jp.cayhanecamel.chai.base.ProductInfos;
+import jp.cayhanecamel.chai.data.provider.AppHistory;
+import jp.cayhanecamel.chai.db.ChaiOpenHelper;
+import jp.cayhanecamel.chai.feature.sqlite.TableInfo;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-public class ChampacaUtil {
+public class ChaiUtil {
 
     private static Context sContext;
 
@@ -31,7 +31,7 @@ public class ChampacaUtil {
         sContext = context;
         ProductInfos.get().dbInfos = dbInfos;
         ProductInfos.get().isDebug = isDebug;
-        ChampacaOpenHelper.get();
+        ChaiOpenHelper.get();
         AppHistory.setPackageName(packageName);
     }
 

@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 fab:fab_icon="@drawable/jp_cayhanecamel_champaca_ic_filter"
                 fab:fab_colorNormal="@color/jp_cayhanecamel_champaca_white"
-                fab:fab_title="@string/jp_cayhanecamel_champaca_filter"
+                fab:fab_title="@string/jp_cayhanecamel_chai_filter"
                 fab:fab_colorPressed="@color/jp_cayhanecamel_champaca_white_pressed"/>
 
             <com.getbase.floatingactionbutton.FloatingActionButton
@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 fab:fab_icon="@drawable/jp_cayhanecamel_champaca_ic_add"
                 fab:fab_colorNormal="@color/jp_cayhanecamel_champaca_white"
-                fab:fab_title="@string/jp_cayhanecamel_champaca_insert"
+                fab:fab_title="@string/jp_cayhanecamel_chai_insert"
                 fab:fab_colorPressed="@color/jp_cayhanecamel_champaca_white_pressed"/>
 
             <com.getbase.floatingactionbutton.FloatingActionButton
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 fab:fab_icon="@drawable/jp_cayhanecamel_champaca_ic_export"
                 fab:fab_colorNormal="@color/jp_cayhanecamel_champaca_white"
-                fab:fab_title="@string/jp_cayhanecamel_champaca_export"
+                fab:fab_title="@string/jp_cayhanecamel_chai_export"
                 fab:fab_colorPressed="@color/jp_cayhanecamel_champaca_white_pressed"/>
 
 
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 fab:fab_icon="@drawable/jp_cayhanecamel_champaca_ic_delete_grey600_24dp"
                 fab:fab_colorNormal="@color/jp_cayhanecamel_champaca_white"
-                fab:fab_title="@string/jp_cayhanecamel_champaca_delete"
+                fab:fab_title="@string/jp_cayhanecamel_chai_delete"
                 fab:fab_colorPressed="@color/jp_cayhanecamel_champaca_white_pressed"/>
 
 

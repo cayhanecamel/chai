@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.sample
+package jp.cayhanecamel.chai.sample
 
 object Const {
 

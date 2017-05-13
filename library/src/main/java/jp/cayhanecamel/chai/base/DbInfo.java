@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.base;
+package jp.cayhanecamel.chai.base;
 
 public class DbInfo {
 

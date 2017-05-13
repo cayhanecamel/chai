@@ -1,11 +1,11 @@
-package jp.cayhanecamel.champaca.base;
+package jp.cayhanecamel.chai.base;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-import jp.cayhanecamel.champaca.base.recycler.ItemBindable;
-import jp.cayhanecamel.champaca.feature.main.ItemDto;
+import jp.cayhanecamel.chai.base.recycler.ItemBindable;
+import jp.cayhanecamel.chai.feature.main.ItemDto;
 
 
 public abstract class AbstractMenuItemView extends LinearLayout implements ItemBindable<ItemDto> {

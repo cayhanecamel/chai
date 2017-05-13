@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.data.provider;
+package jp.cayhanecamel.chai.data.provider;
 
 import android.net.Uri;
 import android.provider.BaseColumns;

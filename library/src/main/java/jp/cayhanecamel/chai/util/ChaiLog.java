@@ -1,12 +1,12 @@
-package jp.cayhanecamel.champaca.util;
+package jp.cayhanecamel.chai.util;
 
 import android.util.Log;
 
-import jp.cayhanecamel.champaca.feature.app_history.AppHistoryAsync;
-import jp.cayhanecamel.champaca.feature.app_history.AppInfo;
-import jp.cayhanecamel.champaca.feature.app_history.AppInfo.Type;
+import jp.cayhanecamel.chai.feature.app_history.AppHistoryAsync;
+import jp.cayhanecamel.chai.feature.app_history.AppInfo;
+import jp.cayhanecamel.chai.feature.app_history.AppInfo.Type;
 
-public class ChampacaLog {
+public class ChaiLog {
 
     public static void v(String msg) {
         addAppHistory(msg, Type.LOG_V);

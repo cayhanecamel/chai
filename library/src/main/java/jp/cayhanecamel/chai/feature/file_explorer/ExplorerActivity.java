@@ -1,25 +1,25 @@
-package jp.cayhanecamel.champaca.feature.file_explorer;
+package jp.cayhanecamel.chai.feature.file_explorer;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
-import jp.cayhanecamel.champaca.base.ChampacaBaseActivity;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.base.ChaiBaseActivity;
+import jp.cayhanecamel.chai.R;
 
-public class ExplorerActivity extends ChampacaBaseActivity implements ExplorerContextHolder {
+public class ExplorerActivity extends ChaiBaseActivity implements ExplorerContextHolder {
 
     private ExplorerContext mExplorerContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.jp_cayhanecamel_champaca_activity_explorer);
+        setContentView(R.layout.jp_cayhanecamel_chai_activity_explorer);
 
         setupToolBar();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(R.string.jp_cayhanecamel_champaca_file_explorer);
+        getSupportActionBar().setTitle(R.string.jp_cayhanecamel_chai_file_explorer);
 
         Fragment fragment;
         Intent intent = getIntent();

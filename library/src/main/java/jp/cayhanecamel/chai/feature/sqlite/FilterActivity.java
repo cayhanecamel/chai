@@ -1,12 +1,12 @@
-package jp.cayhanecamel.champaca.feature.sqlite;
+package jp.cayhanecamel.chai.feature.sqlite;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 
-import jp.cayhanecamel.champaca.base.ChampacaBaseActivity;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.base.ChaiBaseActivity;
+import jp.cayhanecamel.chai.R;
 
-public class FilterActivity extends ChampacaBaseActivity {
+public class FilterActivity extends ChaiBaseActivity {
 
     public static final String TAG = "TableActivity";
 
@@ -16,7 +16,7 @@ public class FilterActivity extends ChampacaBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.jp_cayhanecamel_champaca_activity_base);
+        setContentView(R.layout.jp_cayhanecamel_chai_activity_base);
         setupToolBar();
 
         if (getSupportFragmentManager().findFragmentByTag(TAG) == null) {

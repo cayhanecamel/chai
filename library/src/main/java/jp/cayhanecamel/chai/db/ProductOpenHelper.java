@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.db;
+package jp.cayhanecamel.chai.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

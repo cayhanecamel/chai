@@ -1,8 +1,8 @@
-package jp.cayhanecamel.champaca.sample
+package jp.cayhanecamel.chai.sample
 
 import android.app.Application
-import jp.cayhanecamel.champaca.feature.sqlite.TableInfo
-import jp.cayhanecamel.champaca.util.ChampacaUtil
+import jp.cayhanecamel.chai.feature.sqlite.TableInfo
+import jp.cayhanecamel.chai.util.ChaiUtil
 import java.util.*
 
 class App : Application() {
@@ -10,7 +10,7 @@ class App : Application() {
 
     override fun onCreate() {
 
-        ChampacaUtil.setup(this, Const.DB_NAME, MySQLiteOpenHelper.DB_VERSION, BuildConfig.DEBUG)
+        ChaiUtil.setup(this, Const.DB_NAME, MySQLiteOpenHelper.DB_VERSION, BuildConfig.DEBUG)
 
         // custom display for table Column
         val tableInfo1 = TableInfo()
@@ -24,8 +24,8 @@ class App : Application() {
         tableInfo2.columName = "updated_at"
         tableInfo2.convert = TableInfo.ConvertType.DATE
 
-        ChampacaUtil.addTableInfo(tableInfo1)
-        ChampacaUtil.addTableInfo(tableInfo2)
+        ChaiUtil.addTableInfo(tableInfo1)
+        ChaiUtil.addTableInfo(tableInfo2)
 
         // Call onCreate
         val openHelper = MySQLiteOpenHelper(applicationContext)
@@ -35,10 +35,10 @@ class App : Application() {
         val infos = LinkedHashMap<String, String>()
         infos.put("session_id", "123")
         infos.put("api server", "hoge/fuga")
-        ChampacaUtil.setAppInfos(infos)
+        ChaiUtil.setAppInfos(infos)
 
         // data export setting
-        ChampacaUtil.setDebugEmailAddress("hoge@fuga.fuga")
+        ChaiUtil.setDebugEmailAddress("hoge@fuga.fuga")
     }
 
 

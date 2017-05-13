@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.widget;
+package jp.cayhanecamel.chai.widget;
 
 
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.R;
 
 
 public class PartsEditView extends LinearLayout {
@@ -29,7 +29,7 @@ public class PartsEditView extends LinearLayout {
 
     private void init() {
         setOrientation(VERTICAL);
-        inflate(getContext(), R.layout.jp_cayhanecamel_champaca_view_parts_edit, this);
+        inflate(getContext(), R.layout.jp_cayhanecamel_chai_view_parts_edit, this);
         title = (TextView) findViewById(R.id.title);
         value = (EditText) findViewById(R.id.value);
     }

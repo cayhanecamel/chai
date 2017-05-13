@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.app_history;
+package jp.cayhanecamel.chai.feature.app_history;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -18,15 +18,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import jp.cayhanecamel.champaca.base.ChampacaBaseActivity;
-import jp.cayhanecamel.champaca.data.ChampacaConfig;
-import jp.cayhanecamel.champaca.data.provider.AppHistory;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
-import jp.cayhanecamel.champaca.widget.PartsEditView;
-import jp.cayhanecamel.champaca.widget.PartsSelectView;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.base.ChaiBaseActivity;
+import jp.cayhanecamel.chai.data.ChaiConfig;
+import jp.cayhanecamel.chai.data.provider.AppHistory;
+import jp.cayhanecamel.chai.util.ChaiUtil;
+import jp.cayhanecamel.chai.widget.PartsEditView;
+import jp.cayhanecamel.chai.widget.PartsSelectView;
+import jp.cayhanecamel.chai.R;
 
-public class AppHistorySettingActivity extends ChampacaBaseActivity {
+public class AppHistorySettingActivity extends ChaiBaseActivity {
 
 
     private PartsSelectView typeView;
@@ -44,16 +44,16 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.jp_cayhanecamel_champaca_activity_app_history_setting);
+        setContentView(R.layout.jp_cayhanecamel_chai_activity_app_history_setting);
 
         setupToolBar();
-        getSupportActionBar().setTitle(getString(R.string.jp_cayhanecamel_champaca_app_history_filter));
+        getSupportActionBar().setTitle(getString(R.string.jp_cayhanecamel_chai_app_history_filter));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         typeView = (PartsSelectView) findViewById(R.id.jp_cayhanecamel_champaca_app_history_type);
-        typeView.title.setText(R.string.jp_cayhanecamel_champaca_type);
-        typeView.value.setText(ChampacaConfig.getAppHistoryTypeFilter());
+        typeView.title.setText(R.string.jp_cayhanecamel_chai_type);
+        typeView.value.setText(ChaiConfig.getAppHistoryTypeFilter());
         typeView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,8 +62,8 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
         });
 
         nameView = (PartsSelectView) findViewById(R.id.jp_cayhanecamel_champaca_app_history_name);
-        nameView.title.setText(R.string.jp_cayhanecamel_champaca_name);
-        nameView.value.setText(ChampacaConfig.getAppHistoryNameFilter());
+        nameView.title.setText(R.string.jp_cayhanecamel_chai_name);
+        nameView.value.setText(ChaiConfig.getAppHistoryNameFilter());
         nameView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,10 +72,10 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
         });
 
         limitView = (PartsEditView) findViewById(R.id.jp_cayhanecamel_champaca_app_history_limit);
-        limitView.title.setText(R.string.jp_cayhanecamel_champaca_limit);
+        limitView.title.setText(R.string.jp_cayhanecamel_chai_limit);
         limitView.value.setInputType(InputType.TYPE_CLASS_NUMBER);
 
-        limitView.value.setText(String.valueOf(ChampacaConfig.getAppHistoryLimit()));
+        limitView.value.setText(String.valueOf(ChaiConfig.getAppHistoryLimit()));
     }
 
     @Override
@@ -96,17 +96,17 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
 
     private void setCondition() {
 
-        ChampacaConfig.setAppHistoryTypeFilter(typeView.value.getText().toString());
+        ChaiConfig.setAppHistoryTypeFilter(typeView.value.getText().toString());
 
-        ChampacaConfig.setAppHistoryNameFilter(nameView.value.getText().toString());
+        ChaiConfig.setAppHistoryNameFilter(nameView.value.getText().toString());
 
-        ChampacaConfig.setAppHistoryLimit(Integer.parseInt(limitView.value.getText()
+        ChaiConfig.setAppHistoryLimit(Integer.parseInt(limitView.value.getText()
                 .toString()));
     }
 
     private void showTypeFilter() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.jp_cayhanecamel_champaca_type);
+        builder.setTitle(R.string.jp_cayhanecamel_chai_type);
 
         Cursor cursor = getApplicationContext().getContentResolver().query(
                 AppHistory.CONTENT_URI_DISTINCT,
@@ -116,8 +116,8 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
                 AppHistory.COLUMN_TYPE + " ASC ");
 
         if (cursor.getCount() == 0) {
-            Toast.makeText(ChampacaUtil.getApplicationContext(),
-                    R.string.jp_cayhanecamel_champaca_no_app_history, Toast.LENGTH_LONG).show();
+            Toast.makeText(ChaiUtil.getApplicationContext(),
+                    R.string.jp_cayhanecamel_chai_no_app_history, Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -147,7 +147,7 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
         }
 
         builder.setMultiChoiceItems(items, check, mTypeCheckListener);
-        builder.setPositiveButton(R.string.jp_cayhanecamel_champaca_ok, new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.jp_cayhanecamel_chai_ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 StringBuilder builder = new StringBuilder();
@@ -170,7 +170,7 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
             }
         });
 
-        builder.setNegativeButton(R.string.jp_cayhanecamel_champaca_deselect_all, new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.jp_cayhanecamel_chai_deselect_all, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Iterator<String> keys = mTypeSelectMap.keySet().iterator();
@@ -183,7 +183,7 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
         });
 
 
-        builder.setNeutralButton(R.string.jp_cayhanecamel_champaca_close, new DialogInterface.OnClickListener() {
+        builder.setNeutralButton(R.string.jp_cayhanecamel_chai_close, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -197,7 +197,7 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
 
     private void showNameFilter() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.jp_cayhanecamel_champaca_name);
+        builder.setTitle(R.string.jp_cayhanecamel_chai_name);
 
         Cursor cursor = getApplicationContext().getContentResolver().query(
                 AppHistory.CONTENT_URI_DISTINCT,
@@ -207,8 +207,8 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
                 AppHistory.COLUMN_NAME + " ASC ");
 
         if (cursor.getCount() == 0) {
-            Toast.makeText(ChampacaUtil.getApplicationContext(),
-                    R.string.jp_cayhanecamel_champaca_no_app_history, Toast.LENGTH_LONG).show();
+            Toast.makeText(ChaiUtil.getApplicationContext(),
+                    R.string.jp_cayhanecamel_chai_no_app_history, Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -238,7 +238,7 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
         }
 
         builder.setMultiChoiceItems(items, check, mNameCheckListener);
-        builder.setPositiveButton(R.string.jp_cayhanecamel_champaca_ok, new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.jp_cayhanecamel_chai_ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 StringBuilder builder = new StringBuilder();
@@ -261,7 +261,7 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
             }
         });
 
-        builder.setNegativeButton(R.string.jp_cayhanecamel_champaca_deselect_all, new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.jp_cayhanecamel_chai_deselect_all, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Iterator<String> keys = mNameSelectMap.keySet().iterator();
@@ -273,7 +273,7 @@ public class AppHistorySettingActivity extends ChampacaBaseActivity {
             }
         });
 
-        builder.setNeutralButton(R.string.jp_cayhanecamel_champaca_close, new DialogInterface.OnClickListener() {
+        builder.setNeutralButton(R.string.jp_cayhanecamel_chai_close, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();

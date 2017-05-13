@@ -12,7 +12,7 @@
         android:minHeight="?attr/actionBarSize"
         android:background="@color/jp_cayhanecamel_champaca_action_bar_color"/>
 
-    <jp.cayhanecamel.champaca.widget.PartsSelectView
+    <jp.cayhanecamel.chai.widget.PartsSelectView
         android:id="@+id/jp_cayhanecamel_champaca_app_history_type"
         android:background="@drawable/jp_cayhanecamel_champaca_common_item_selector_background"
         android:layout_marginTop="@dimen/jp_cayhanecamel_champaca_view_parts_top_padding"
@@ -21,7 +21,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
 
-    <jp.cayhanecamel.champaca.widget.PartsSelectView
+    <jp.cayhanecamel.chai.widget.PartsSelectView
         android:id="@+id/jp_cayhanecamel_champaca_app_history_name"
         android:background="@drawable/jp_cayhanecamel_champaca_common_item_selector_background"
         android:layout_marginTop="@dimen/jp_cayhanecamel_champaca_view_parts_top_padding"
@@ -30,7 +30,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
 
-    <jp.cayhanecamel.champaca.widget.PartsEditView
+    <jp.cayhanecamel.chai.widget.PartsEditView
         android:id="@+id/jp_cayhanecamel_champaca_app_history_limit"
         android:layout_marginTop="@dimen/jp_cayhanecamel_champaca_view_parts_top_padding"
         android:layout_marginLeft="@dimen/jp_cayhanecamel_champaca_view_parts_left_right_padding"

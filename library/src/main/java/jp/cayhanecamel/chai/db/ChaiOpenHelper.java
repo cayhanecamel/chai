@@ -1,19 +1,19 @@
-package jp.cayhanecamel.champaca.db;
+package jp.cayhanecamel.chai.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import jp.cayhanecamel.champaca.base.ProductInfos;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
+import jp.cayhanecamel.chai.base.ProductInfos;
+import jp.cayhanecamel.chai.util.ChaiUtil;
 
 /**
  * <pre>
  * MyOpenHelperクラス
  * </pre>
  */
-public class ChampacaOpenHelper extends SQLiteOpenHelper {
+public class ChaiOpenHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "champaca.sqlite";
 
@@ -41,15 +41,15 @@ public class ChampacaOpenHelper extends SQLiteOpenHelper {
                     + "deleted_at  INTEGER NOT NULL" + ");";
 
 
-    private static final ChampacaOpenHelper sInstance = new ChampacaOpenHelper(
-            ChampacaUtil.getApplicationContext(), DB_NAME, null, DB_VERSION);
+    private static final ChaiOpenHelper sInstance = new ChaiOpenHelper(
+            ChaiUtil.getApplicationContext(), DB_NAME, null, DB_VERSION);
 
-    public ChampacaOpenHelper(Context context, String name, CursorFactory factory,
-                              int version) {
+    public ChaiOpenHelper(Context context, String name, CursorFactory factory,
+                          int version) {
         super(context, name, factory, version);
     }
 
-    public static ChampacaOpenHelper get() {
+    public static ChaiOpenHelper get() {
         return sInstance;
     }
 

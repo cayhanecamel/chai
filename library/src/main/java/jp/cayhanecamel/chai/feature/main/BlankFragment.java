@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.main;
+package jp.cayhanecamel.chai.feature.main;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.R;
 
 
 public class BlankFragment extends Fragment {
@@ -18,7 +18,7 @@ public class BlankFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_blank, container, false);
+        return inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_blank, container, false);
     }
 
 

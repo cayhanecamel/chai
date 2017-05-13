@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.util;
+package jp.cayhanecamel.chai.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;

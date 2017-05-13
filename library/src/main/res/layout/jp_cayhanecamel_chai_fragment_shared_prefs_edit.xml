@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/jp_cayhanecamel_champaca_bg_color_gy01"
-            android:text="@string/jp_cayhanecamel_champaca_shared_prefs_edit_true"/>
+            android:text="@string/jp_cayhanecamel_chai_shared_prefs_edit_true"/>
 
         <RadioButton
             android:id="@+id/jp_cayhanecamel_champaca_radiobutton_false"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy01"
             android:checked="true"
-            android:text="@string/jp_cayhanecamel_champaca_shared_prefs_edit_false"/>
+            android:text="@string/jp_cayhanecamel_chai_shared_prefs_edit_false"/>
 
     </RadioGroup>
 
@@ -58,6 +58,6 @@
         android:layout_height="40dp"
         android:gravity="center"
         android:textColor="@color/jp_cayhanecamel_champaca_white"
-        android:text="@string/jp_cayhanecamel_champaca_shared_prefs_edit_btn"/>
+        android:text="@string/jp_cayhanecamel_chai_shared_prefs_edit_btn"/>
 
 </LinearLayout>

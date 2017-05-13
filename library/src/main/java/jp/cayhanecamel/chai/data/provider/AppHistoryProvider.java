@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.data.provider;
+package jp.cayhanecamel.chai.data.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -10,7 +10,7 @@ import android.net.Uri;
 
 import java.util.HashMap;
 
-import jp.cayhanecamel.champaca.db.ChampacaOpenHelper;
+import jp.cayhanecamel.chai.db.ChaiOpenHelper;
 
 /**
  * AppicationHistoryProviderクラス
@@ -59,7 +59,7 @@ public class AppHistoryProvider extends ContentProvider {
 
     @Override
     public Uri insert(Uri uri, ContentValues values) {
-        SQLiteDatabase db = ChampacaOpenHelper.get().getWritableDatabase();
+        SQLiteDatabase db = ChaiOpenHelper.get().getWritableDatabase();
 
         db.insert(AppHistory.TABLE_NAME, null, values);
 
@@ -70,7 +70,7 @@ public class AppHistoryProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-        SQLiteDatabase db = ChampacaOpenHelper.get().getWritableDatabase();
+        SQLiteDatabase db = ChaiOpenHelper.get().getWritableDatabase();
         db.delete(AppHistory.TABLE_NAME, selection, selectionArgs);
         getContext().getContentResolver().notifyChange(uri, null);
         return 0;
@@ -95,7 +95,7 @@ public class AppHistoryProvider extends ContentProvider {
                 break;
         }
 
-        SQLiteDatabase db = ChampacaOpenHelper.get().getWritableDatabase();
+        SQLiteDatabase db = ChaiOpenHelper.get().getWritableDatabase();
         Cursor c = qb.query(db, projection, selection, selectionArgs, null,
                 null, sortOrder);
         c.setNotificationUri(getContext().getContentResolver(), uri);

@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.main;
+package jp.cayhanecamel.chai.feature.main;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -14,18 +14,18 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import jp.cayhanecamel.champaca.data.ChampacaConst;
-import jp.cayhanecamel.champaca.db.ChampacaOpenHelper;
-import jp.cayhanecamel.champaca.db.ProductOpenHelper;
-import jp.cayhanecamel.champaca.feature.sqlite.TableActivity;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.data.ChaiConst;
+import jp.cayhanecamel.chai.db.ChaiOpenHelper;
+import jp.cayhanecamel.chai.db.ProductOpenHelper;
+import jp.cayhanecamel.chai.feature.sqlite.TableActivity;
+import jp.cayhanecamel.chai.util.ChaiUtil;
+import jp.cayhanecamel.chai.R;
 
 public class TableInfoFragment extends Fragment {
 
     private ProductOpenHelper mProductOpenHelper;
 
-    private ChampacaOpenHelper mChampacaOpenHelper;
+    private ChaiOpenHelper mChampacaOpenHelper;
 
     private RecyclerView mListView;
 
@@ -40,13 +40,13 @@ public class TableInfoFragment extends Fragment {
         super.onCreate(savedInstanceState);
         Bundle args_ = getArguments();
         if (args_ != null) {
-            if (args_.containsKey(ChampacaConst.DB_NAME)) {
-                mDbVersion = ((int) args_.getSerializable(ChampacaConst.DB_VERSION));
-                mDbName = ((String) args_.getSerializable(ChampacaConst.DB_NAME));
-                if (!mDbName.equals(ChampacaConst.CHAMPACA)) {
-                    mProductOpenHelper = new ProductOpenHelper(ChampacaUtil.getApplicationContext(), mDbName, null, mDbVersion);
+            if (args_.containsKey(ChaiConst.DB_NAME)) {
+                mDbVersion = ((int) args_.getSerializable(ChaiConst.DB_VERSION));
+                mDbName = ((String) args_.getSerializable(ChaiConst.DB_NAME));
+                if (!mDbName.equals(ChaiConst.CHAMPACA)) {
+                    mProductOpenHelper = new ProductOpenHelper(ChaiUtil.getApplicationContext(), mDbName, null, mDbVersion);
                 } else {
-                    mChampacaOpenHelper = ChampacaOpenHelper.get();
+                    mChampacaOpenHelper = ChaiOpenHelper.get();
                 }
             }
         }
@@ -56,7 +56,7 @@ public class TableInfoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_tables, container, false);
+        return inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_tables, container, false);
     }
 
 
@@ -93,9 +93,9 @@ public class TableInfoFragment extends Fragment {
 
                     Intent intent = new Intent(getActivity()
                             .getApplicationContext(), TableActivity.class);
-                    intent.putExtra(ChampacaConst.TABLE_NAME, itemDto.value);
-                    intent.putExtra(ChampacaConst.DB_NAME, mDbName);
-                    intent.putExtra(ChampacaConst.DB_VERSION, mDbVersion);
+                    intent.putExtra(ChaiConst.TABLE_NAME, itemDto.value);
+                    intent.putExtra(ChaiConst.DB_NAME, mDbName);
+                    intent.putExtra(ChaiConst.DB_VERSION, mDbVersion);
 
                     startActivity(intent);
                 }
@@ -111,7 +111,7 @@ public class TableInfoFragment extends Fragment {
     private List<ItemDto> getTables() {
         List<ItemDto> list = new ArrayList<>();
         SQLiteDatabase productDb;
-        if (!mDbName.equals(ChampacaConst.CHAMPACA)) {
+        if (!mDbName.equals(ChaiConst.CHAMPACA)) {
             productDb = mProductOpenHelper.getWritableDatabase();
         } else {
             productDb = mChampacaOpenHelper.getWritableDatabase();

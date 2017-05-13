@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.main;
+package jp.cayhanecamel.chai.feature.main;
 
 import android.content.Context;
 import android.view.View;
@@ -6,15 +6,15 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import jp.cayhanecamel.champaca.base.AbstractMenuItemView;
-import jp.cayhanecamel.champaca.base.recycler.CollectionRecyclerAdapter;
-import jp.cayhanecamel.champaca.base.recycler.ItemCollection;
-import jp.cayhanecamel.champaca.base.recycler.PositionBindableViewHolder;
-import jp.cayhanecamel.champaca.widget.ListBlankView;
-import jp.cayhanecamel.champaca.widget.ListHeaderView;
-import jp.cayhanecamel.champaca.widget.ListItemView;
-import jp.cayhanecamel.champaca.widget.ListTableItemView;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.base.AbstractMenuItemView;
+import jp.cayhanecamel.chai.base.recycler.CollectionRecyclerAdapter;
+import jp.cayhanecamel.chai.base.recycler.ItemCollection;
+import jp.cayhanecamel.chai.base.recycler.PositionBindableViewHolder;
+import jp.cayhanecamel.chai.widget.ListBlankView;
+import jp.cayhanecamel.chai.widget.ListHeaderView;
+import jp.cayhanecamel.chai.widget.ListItemView;
+import jp.cayhanecamel.chai.widget.ListTableItemView;
+import jp.cayhanecamel.chai.R;
 
 public class CommonRecyclerAdapter extends CollectionRecyclerAdapter<ItemDto, AbstractMenuItemView> {
     private final Context context;

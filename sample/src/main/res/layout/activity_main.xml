@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
-    tools:context="jp.cayhanecamel.champaca.sample.MainActivity">
+    tools:context="jp.cayhanecamel.chai.sample.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"

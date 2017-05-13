@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.sqlite;
+package jp.cayhanecamel.chai.feature.sqlite;
 
 import android.content.res.Resources;
 import android.database.Cursor;
@@ -28,12 +28,12 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import jp.cayhanecamel.champaca.base.ProductInfos;
-import jp.cayhanecamel.champaca.data.ChampacaConst;
-import jp.cayhanecamel.champaca.db.ChampacaOpenHelper;
-import jp.cayhanecamel.champaca.db.ProductOpenHelper;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.base.ProductInfos;
+import jp.cayhanecamel.chai.data.ChaiConst;
+import jp.cayhanecamel.chai.db.ChaiOpenHelper;
+import jp.cayhanecamel.chai.db.ProductOpenHelper;
+import jp.cayhanecamel.chai.util.ChaiUtil;
+import jp.cayhanecamel.chai.R;
 
 public class TableFragment extends Fragment implements AppBarLayout.OnOffsetChangedListener {
 
@@ -91,7 +91,7 @@ public class TableFragment extends Fragment implements AppBarLayout.OnOffsetChan
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater
-                .inflate(R.layout.jp_cayhanecamel_champaca_fragment_list_common, container, false);
+                .inflate(R.layout.jp_cayhanecamel_chai_fragment_list_common, container, false);
     }
 
 
@@ -103,15 +103,15 @@ public class TableFragment extends Fragment implements AppBarLayout.OnOffsetChan
     }
 
     private void init() {
-        mTableName = getActivity().getIntent().getStringExtra(ChampacaConst.TABLE_NAME);
-        mDbName = getActivity().getIntent().getStringExtra(ChampacaConst.DB_NAME);
-        mDbVersion = getActivity().getIntent().getIntExtra(ChampacaConst.DB_VERSION, 0);
+        mTableName = getActivity().getIntent().getStringExtra(ChaiConst.TABLE_NAME);
+        mDbName = getActivity().getIntent().getStringExtra(ChaiConst.DB_NAME);
+        mDbVersion = getActivity().getIntent().getIntExtra(ChaiConst.DB_VERSION, 0);
 
-        if (!mDbName.equals(ChampacaConst.CHAMPACA)) {
-            mOpenHelper = new ProductOpenHelper(ChampacaUtil.getApplicationContext(), mDbName, null, mDbVersion);
+        if (!mDbName.equals(ChaiConst.CHAMPACA)) {
+            mOpenHelper = new ProductOpenHelper(ChaiUtil.getApplicationContext(), mDbName, null, mDbVersion);
 
         } else {
-            mOpenHelper = ChampacaOpenHelper.get();
+            mOpenHelper = ChaiOpenHelper.get();
         }
 
         db = mOpenHelper.getWritableDatabase();
@@ -190,7 +190,7 @@ public class TableFragment extends Fragment implements AppBarLayout.OnOffsetChan
         createRows(cursor, isBack);
 
         if (pageTitle == null) {
-            tableBase.addView(View.inflate(getActivity(), R.layout.jp_cayhanecamel_champaca_table_page, null));
+            tableBase.addView(View.inflate(getActivity(), R.layout.jp_cayhanecamel_chai_table_page, null));
             pageLayout = (LinearLayout) getView().findViewById(R.id.jp_cayhanecamel_champaca_pageLayout);
             pageTitle = (TextView) getView().findViewById(R.id.jp_cayhanecamel_champaca_pageTitle);
             back = (Button) getView().findViewById(R.id.jp_cayhanecamel_champaca_back);

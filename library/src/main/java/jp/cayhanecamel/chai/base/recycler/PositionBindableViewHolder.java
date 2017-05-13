@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.base.recycler;
+package jp.cayhanecamel.chai.base.recycler;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

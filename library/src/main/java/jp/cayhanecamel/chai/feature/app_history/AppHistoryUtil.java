@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.app_history;
+package jp.cayhanecamel.chai.feature.app_history;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -7,10 +7,10 @@ import android.text.TextUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import jp.cayhanecamel.champaca.data.ChampacaConfig;
-import jp.cayhanecamel.champaca.data.provider.AppHistory;
-import jp.cayhanecamel.champaca.feature.app_history.AppInfo.Type;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
+import jp.cayhanecamel.chai.data.ChaiConfig;
+import jp.cayhanecamel.chai.data.provider.AppHistory;
+import jp.cayhanecamel.chai.feature.app_history.AppInfo.Type;
+import jp.cayhanecamel.chai.util.ChaiUtil;
 
 public class AppHistoryUtil {
 
@@ -27,7 +27,7 @@ public class AppHistoryUtil {
      * @see {@link AppHistoryAsync}
      */
     public static long add(AppInfo appInfo) {
-        if ((ChampacaConfig.getAppHistoryAddingMode() & ChampacaConfig.CHAMPACA_APP_HISTORY_ADDING_MODE_ALLOW_UTIL) == 0) {
+        if ((ChaiConfig.getAppHistoryAddingMode() & ChaiConfig.CHAMPACA_APP_HISTORY_ADDING_MODE_ALLOW_UTIL) == 0) {
             throw new IllegalStateException("AppHistoryUtil Disallowed");
         }
 
@@ -44,7 +44,7 @@ public class AppHistoryUtil {
         cv.put("name", getName(info));
         cv.put("content", buildContent(info));
         cv.put("created_at", createdAt);
-        ChampacaUtil.getApplicationContext().getContentResolver()
+        ChaiUtil.getApplicationContext().getContentResolver()
                 .insert(AppHistory.CONTENT_URI, cv);
 
         return seq;
@@ -63,9 +63,9 @@ public class AppHistoryUtil {
 
         if (info.type == Type.WEB_API_REQUEST
                 || info.type == Type.WEB_VIEW_REQUEST) {
-            long seq = ChampacaConfig.getSeverApiRequestSequence();
+            long seq = ChaiConfig.getSeverApiRequestSequence();
             seq++;
-            ChampacaConfig.setSeverApiRequestSequence(seq);
+            ChaiConfig.setSeverApiRequestSequence(seq);
             return seq;
         }
         return info.seq;
@@ -101,7 +101,7 @@ public class AppHistoryUtil {
 
                 // JSONRPC-Responseの場合はseqが一致するRequestの名前を利用する。
                 String seq = Long.toString(info.seq);
-                Cursor cursor = ChampacaUtil
+                Cursor cursor = ChaiUtil
                         .getApplicationContext()
                         .getContentResolver()
                         .query(AppHistory.CONTENT_URI, null, "SEQ=?",

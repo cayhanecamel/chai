@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.data;
+package jp.cayhanecamel.chai.data;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import jp.cayhanecamel.champaca.feature.app_history.AppHistoryAsync;
-import jp.cayhanecamel.champaca.feature.app_history.AppHistoryFragment;
-import jp.cayhanecamel.champaca.feature.app_history.AppHistoryUtil;
-import jp.cayhanecamel.champaca.util.ChampacaUtil;
+import jp.cayhanecamel.chai.feature.app_history.AppHistoryAsync;
+import jp.cayhanecamel.chai.feature.app_history.AppHistoryFragment;
+import jp.cayhanecamel.chai.feature.app_history.AppHistoryUtil;
+import jp.cayhanecamel.chai.util.ChaiUtil;
 
-public class ChampacaConfig {
+public class ChaiConfig {
 
     /**
      * App履歴の追加に{@link AppHistoryUtil}の利用を許可
@@ -40,7 +40,7 @@ public class ChampacaConfig {
     private static final String SPKEY_CHAMPACA_LAST_SELETED_TAB_INDEX = "SPKEY_CHAMPACA_LAST_SELETED_TAB_INDEX";
 
     private static SharedPreferences getSP() {
-        return ChampacaUtil.getApplicationContext().getSharedPreferences(
+        return ChaiUtil.getApplicationContext().getSharedPreferences(
                 "ChampacaConfig", Context.MODE_PRIVATE);
     }
 

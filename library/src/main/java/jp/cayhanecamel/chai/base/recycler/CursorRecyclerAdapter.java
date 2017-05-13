@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.base.recycler;
+package jp.cayhanecamel.chai.base.recycler;
 
 import android.database.Cursor;
 import android.view.View;

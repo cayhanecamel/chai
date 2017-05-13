@@ -1,5 +1,5 @@
 
-package jp.cayhanecamel.champaca.feature.shared_preference;
+package jp.cayhanecamel.chai.feature.shared_preference;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,7 +17,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.R;
 
 
 public class SharedPrefsEditFragment extends Fragment implements OnClickListener {
@@ -69,7 +69,7 @@ public class SharedPrefsEditFragment extends Fragment implements OnClickListener
         /**
          * inflate
          */
-        mView = inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_shared_prefs_edit, container, false);
+        mView = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_shared_prefs_edit, container, false);
 
         // パラメータ受け取り
         Bundle args = getArguments();

@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.file_explorer;
+package jp.cayhanecamel.chai.feature.file_explorer;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -34,11 +34,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import jp.cayhanecamel.champaca.feature.main.CommonRecyclerAdapter;
-import jp.cayhanecamel.champaca.feature.main.ItemDto;
-import jp.cayhanecamel.champaca.util.Util;
-import jp.cayhanecamel.champaca.widget.ListItemView;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.feature.main.CommonRecyclerAdapter;
+import jp.cayhanecamel.chai.feature.main.ItemDto;
+import jp.cayhanecamel.chai.util.Util;
+import jp.cayhanecamel.chai.widget.ListItemView;
+import jp.cayhanecamel.chai.R;
 
 public class ExplorerFragment extends Fragment {
 
@@ -83,7 +83,7 @@ public class ExplorerFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootview = inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_explorer, container, false);
+        View rootview = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_explorer, container, false);
         mRecyclerView = (RecyclerView) rootview.findViewById(R.id.jp_cayhanecamel_champaca_scroll);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(inflater.getContext()));
         return rootview;
@@ -124,7 +124,7 @@ public class ExplorerFragment extends Fragment {
             }
         });
         if (files == null || files.length == 0) {
-            Toast.makeText(getActivity(), R.string.jp_cayhanecamel_champaca_explorer_data_not_found, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), R.string.jp_cayhanecamel_chai_explorer_data_not_found, Toast.LENGTH_SHORT).show();
             List<FileItem> items = Collections.emptyList();
             mAdapter = new FileItemAdapter(getActivity(), items);
             mRecyclerView.setAdapter(mAdapter);
@@ -157,7 +157,7 @@ public class ExplorerFragment extends Fragment {
             String info = null;
             if (file.getName().equals(PathSegment.NAME_PARENT)) {
                 displayName = file.getParentFile().getName();
-                info = getString(R.string.jp_cayhanecamel_champaca_back);
+                info = getString(R.string.jp_cayhanecamel_chai_back);
             } else {
                 displayName = file.getName();
             }
@@ -206,13 +206,13 @@ public class ExplorerFragment extends Fragment {
                                         if (file.delete()) {
                                             Toast.makeText(
                                                     getActivity(),
-                                                    getString(R.string.jp_cayhanecamel_champaca_explorer_deletion_completed, file.getAbsolutePath()),
+                                                    getString(R.string.jp_cayhanecamel_chai_explorer_deletion_completed, file.getAbsolutePath()),
                                                     Toast.LENGTH_SHORT).show();
                                             adapter.removeItemAt(position);
                                         } else {
                                             Toast.makeText(
                                                     getActivity(),
-                                                    getString(R.string.jp_cayhanecamel_champaca_explorer_deletion_failed, file.getAbsolutePath()),
+                                                    getString(R.string.jp_cayhanecamel_chai_explorer_deletion_failed, file.getAbsolutePath()),
                                                     Toast.LENGTH_LONG).show();
                                         }
                                     }
@@ -256,7 +256,7 @@ public class ExplorerFragment extends Fragment {
                 return;
             }
 
-            Toast.makeText(getActivity(), R.string.jp_cayhanecamel_champaca_explorer_not_implemented_yet, Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), R.string.jp_cayhanecamel_chai_explorer_not_implemented_yet, Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -280,7 +280,7 @@ public class ExplorerFragment extends Fragment {
         try {
             startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(getActivity(), R.string.jp_cayhanecamel_champaca_explorer_opener_not_found,
+            Toast.makeText(getActivity(), R.string.jp_cayhanecamel_chai_explorer_opener_not_found,
                     Toast.LENGTH_LONG).show();
         }
     }

@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.file_explorer;
+package jp.cayhanecamel.chai.feature.file_explorer;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -19,10 +19,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import jp.cayhanecamel.champaca.feature.main.CommonRecyclerAdapter;
-import jp.cayhanecamel.champaca.feature.main.ItemDto;
-import jp.cayhanecamel.champaca.util.ChampacaLog;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.feature.main.CommonRecyclerAdapter;
+import jp.cayhanecamel.chai.feature.main.ItemDto;
+import jp.cayhanecamel.chai.util.ChaiLog;
+import jp.cayhanecamel.chai.R;
 
 public class HomeFragment extends Fragment {
     public static final String KEY_NAME = "name";
@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.jp_cayhanecamel_champaca_fragment_tables, container, false);
+        return inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_tables, container, false);
     }
 
     @Override
@@ -98,7 +98,7 @@ public class HomeFragment extends Fragment {
         try {
             p = m.getPackageInfo(appDirpath, 0);
         } catch (PackageManager.NameNotFoundException e) {
-            ChampacaLog.e(e);
+            ChaiLog.e(e);
         }
         if (p != null) {
             appDirpath = p.applicationInfo.dataDir;

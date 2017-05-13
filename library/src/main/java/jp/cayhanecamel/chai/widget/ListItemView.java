@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.widget;
+package jp.cayhanecamel.chai.widget;
 
 
 import android.content.Context;
@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import jp.cayhanecamel.champaca.base.AbstractMenuItemView;
-import jp.cayhanecamel.champaca.feature.main.ItemDto;
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.base.AbstractMenuItemView;
+import jp.cayhanecamel.chai.feature.main.ItemDto;
+import jp.cayhanecamel.chai.R;
 
 public class ListItemView extends AbstractMenuItemView {
 
@@ -21,7 +21,7 @@ public class ListItemView extends AbstractMenuItemView {
 
     public ListItemView(Context context) {
         super(context);
-        inflate(getContext(), R.layout.jp_cayhanecamel_champaca_list_item_app_info, this);
+        inflate(getContext(), R.layout.jp_cayhanecamel_chai_list_item_app_info, this);
         title = (TextView) findViewById(R.id.jp_cayhanecamel_champaca_title);
         value = (TextView) findViewById(R.id.jp_cayhanecamel_champaca_value);
         divider = (View) findViewById(R.id.jp_cayhanecamel_champaca_divider);

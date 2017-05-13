@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.file_explorer;
+package jp.cayhanecamel.chai.feature.file_explorer;
 
 import android.content.Context;
 import android.text.Spannable;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.R;
 
 public class ExplorerContext {
 

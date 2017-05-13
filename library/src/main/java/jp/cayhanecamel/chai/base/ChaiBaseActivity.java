@@ -1,14 +1,14 @@
-package jp.cayhanecamel.champaca.base;
+package jp.cayhanecamel.chai.base;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import jp.cayhanecamel.champaca.R;
+import jp.cayhanecamel.chai.R;
 
 
-public class ChampacaBaseActivity extends AppCompatActivity {
+public class ChaiBaseActivity extends AppCompatActivity {
 
 
     protected Toolbar mToolbar;

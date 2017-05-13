@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.app_history;
+package jp.cayhanecamel.chai.feature.app_history;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -6,7 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import jp.cayhanecamel.champaca.data.ChampacaConfig;
+import jp.cayhanecamel.chai.data.ChaiConfig;
 
 public class AppHistoryAsync {
     private static AppHistoryAsync sInstance;
@@ -58,7 +58,7 @@ public class AppHistoryAsync {
      * @return このインスタンス
      */
     public AppHistoryAsync add(AppInfo appInfo, SequenceNumberGenerator sequenceNumberGenerator) {
-        if ((ChampacaConfig.getAppHistoryAddingMode() & ChampacaConfig.CHAMPACA_APP_HISTORY_ADDING_MODE_ALLOW_ASYNC) == 0) {
+        if ((ChaiConfig.getAppHistoryAddingMode() & ChaiConfig.CHAMPACA_APP_HISTORY_ADDING_MODE_ALLOW_ASYNC) == 0) {
             throw new IllegalStateException("AppHistoryAsync Disallowed");
         }
 
@@ -132,7 +132,7 @@ public class AppHistoryAsync {
         private long seq;
 
         public SimpleSequenceNumberGenerator() {
-            this(ChampacaConfig.getSeverApiRequestSequence());
+            this(ChaiConfig.getSeverApiRequestSequence());
         }
 
         public SimpleSequenceNumberGenerator(long seq) {
@@ -142,7 +142,7 @@ public class AppHistoryAsync {
         @Override
         public synchronized long next() {
             long seq = this.seq;
-            ChampacaConfig.setSeverApiRequestSequence(seq);
+            ChaiConfig.setSeverApiRequestSequence(seq);
             this.seq++;
             return seq;
         }

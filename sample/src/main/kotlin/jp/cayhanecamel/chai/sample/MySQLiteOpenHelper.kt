@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.sample
+package jp.cayhanecamel.chai.sample
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

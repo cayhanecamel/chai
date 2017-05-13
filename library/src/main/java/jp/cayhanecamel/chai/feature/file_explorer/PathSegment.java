@@ -1,4 +1,4 @@
-package jp.cayhanecamel.champaca.feature.file_explorer;
+package jp.cayhanecamel.chai.feature.file_explorer;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -35,7 +35,7 @@ public class PathSegment {
 
     public static String joinNames(Iterable<PathSegment> pathSegments, String delimiter) {
         // "/": return "/"
-        // "/", "jp_cayhanecamel_champaca_table_page" : return "/jp_cayhanecamel_champaca_table_page"
+        // "/", "jp_cayhanecamel_chai_table_page" : return "/jp_cayhanecamel_chai_table_page"
         StringBuilder buf = new StringBuilder();
         Iterator<PathSegment> iterator = pathSegments.iterator();
         PathSegment pathSegment = iterator.next();
