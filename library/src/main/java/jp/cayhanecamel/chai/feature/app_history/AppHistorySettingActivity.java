@@ -51,7 +51,7 @@ public class AppHistorySettingActivity extends ChaiBaseActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        typeView = (PartsSelectView) findViewById(R.id.jp_cayhanecamel_champaca_app_history_type);
+        typeView = (PartsSelectView) findViewById(R.id.jp_cayhanecamel_chai_app_history_type);
         typeView.title.setText(R.string.jp_cayhanecamel_chai_type);
         typeView.value.setText(ChaiConfig.getAppHistoryTypeFilter());
         typeView.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +61,7 @@ public class AppHistorySettingActivity extends ChaiBaseActivity {
             }
         });
 
-        nameView = (PartsSelectView) findViewById(R.id.jp_cayhanecamel_champaca_app_history_name);
+        nameView = (PartsSelectView) findViewById(R.id.jp_cayhanecamel_chai_app_history_name);
         nameView.title.setText(R.string.jp_cayhanecamel_chai_name);
         nameView.value.setText(ChaiConfig.getAppHistoryNameFilter());
         nameView.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +71,7 @@ public class AppHistorySettingActivity extends ChaiBaseActivity {
             }
         });
 
-        limitView = (PartsEditView) findViewById(R.id.jp_cayhanecamel_champaca_app_history_limit);
+        limitView = (PartsEditView) findViewById(R.id.jp_cayhanecamel_chai_app_history_limit);
         limitView.title.setText(R.string.jp_cayhanecamel_chai_limit);
         limitView.value.setInputType(InputType.TYPE_CLASS_NUMBER);
 
@@ -80,13 +80,13 @@ public class AppHistorySettingActivity extends ChaiBaseActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.jp_cayhanecamel_champaca_menu_app_history_filter, menu);
+        getMenuInflater().inflate(R.menu.jp_cayhanecamel_chai_menu_app_history_filter, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.jp_cayhanecamel_champaca_done) {
+        if (item.getItemId() == R.id.jp_cayhanecamel_chai_done) {
             setCondition();
             finish();
         }

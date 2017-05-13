@@ -96,14 +96,14 @@ public class SharedPrefsEditFragment extends Fragment implements OnClickListener
      * UIセットアップ
      */
     private void setupUi() {
-        mFileName = (TextView) mView.findViewById(R.id.jp_cayhanecamel_champaca_file_name);
-        mPrefKeyTextView = (TextView) mView.findViewById(R.id.jp_cayhanecamel_champaca_pref_key);
-        mPrefValueTextView = (EditText) mView.findViewById(R.id.jp_cayhanecamel_champaca_pref_value);
-        mPrefUpdateBtn = (Button) mView.findViewById(R.id.jp_cayhanecamel_champaca_pref_update_btn);
+        mFileName = (TextView) mView.findViewById(R.id.jp_cayhanecamel_chai_file_name);
+        mPrefKeyTextView = (TextView) mView.findViewById(R.id.jp_cayhanecamel_chai_pref_key);
+        mPrefValueTextView = (EditText) mView.findViewById(R.id.jp_cayhanecamel_chai_pref_value);
+        mPrefUpdateBtn = (Button) mView.findViewById(R.id.jp_cayhanecamel_chai_pref_update_btn);
         mPrefUpdateBtn.setOnClickListener(this);
-        mRadioGroup = (RadioGroup) mView.findViewById(R.id.jp_cayhanecamel_champaca_radiogroup);
-        mRadioButtonTrue = (RadioButton) mView.findViewById(R.id.jp_cayhanecamel_champaca_radiobutton_true);
-        mRadioButtonFalse = (RadioButton) mView.findViewById(R.id.jp_cayhanecamel_champaca_radiobutton_false);
+        mRadioGroup = (RadioGroup) mView.findViewById(R.id.jp_cayhanecamel_chai_radiogroup);
+        mRadioButtonTrue = (RadioButton) mView.findViewById(R.id.jp_cayhanecamel_chai_radiobutton_true);
+        mRadioButtonFalse = (RadioButton) mView.findViewById(R.id.jp_cayhanecamel_chai_radiobutton_false);
 
         if (mPrefType.equals(TYPE_BOOLEAN)) {
             mRadioGroup.setVisibility(View.VISIBLE);
@@ -132,7 +132,7 @@ public class SharedPrefsEditFragment extends Fragment implements OnClickListener
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if (id == R.id.jp_cayhanecamel_champaca_pref_update_btn) {
+        if (id == R.id.jp_cayhanecamel_chai_pref_update_btn) {
             int currentapiVersion = android.os.Build.VERSION.SDK_INT;
             if (currentapiVersion >= android.os.Build.VERSION_CODES.GINGERBREAD) {
                 putValue();
@@ -157,7 +157,7 @@ public class SharedPrefsEditFragment extends Fragment implements OnClickListener
         if (mPrefType.equals(TYPE_BOOLEAN)) {
             boolean valueBoolean;
 
-            valueBoolean = mRadioGroup.getCheckedRadioButtonId() == R.id.jp_cayhanecamel_champaca_radiobutton_true ? true : false;
+            valueBoolean = mRadioGroup.getCheckedRadioButtonId() == R.id.jp_cayhanecamel_chai_radiobutton_true ? true : false;
             prefs.edit().putBoolean(mPrefKey, valueBoolean).apply();
         } else if (mPrefType.equals(TYPE_FLOAT)) {
             float valueFloat;

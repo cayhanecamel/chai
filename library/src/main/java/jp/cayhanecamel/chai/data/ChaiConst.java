@@ -14,6 +14,6 @@ public class ChaiConst {
 
     public static final String TABLE_NAME = "table_name";
 
-    public static final String CHAMPACA = "champaca";
+    public static final String CHAMPACA = "chai";
 
 }

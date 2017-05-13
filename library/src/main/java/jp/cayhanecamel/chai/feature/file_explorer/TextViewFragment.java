@@ -43,7 +43,7 @@ public class TextViewFragment extends DialogFragment {
         View view = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_text_view, null,
                 false);
 
-        TextView text = (TextView) view.findViewById(R.id.jp_cayhanecamel_champaca_text);
+        TextView text = (TextView) view.findViewById(R.id.jp_cayhanecamel_chai_text);
         StringBuilder builder = new StringBuilder(text.getText());
 
         String line = "";

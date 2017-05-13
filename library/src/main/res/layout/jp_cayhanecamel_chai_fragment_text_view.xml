@@ -7,12 +7,12 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/jp_cayhanecamel_champaca_scrollView"
+        android:id="@+id/jp_cayhanecamel_chai_scrollView"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true">
 
         <TextView
-            android:id="@+id/jp_cayhanecamel_champaca_text"
+            android:id="@+id/jp_cayhanecamel_chai_text"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_centerHorizontal="true"

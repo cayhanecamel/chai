@@ -25,7 +25,7 @@ public class TableInfoFragment extends Fragment {
 
     private ProductOpenHelper mProductOpenHelper;
 
-    private ChaiOpenHelper mChampacaOpenHelper;
+    private ChaiOpenHelper mChaiOpenHelper;
 
     private RecyclerView mListView;
 
@@ -46,7 +46,7 @@ public class TableInfoFragment extends Fragment {
                 if (!mDbName.equals(ChaiConst.CHAMPACA)) {
                     mProductOpenHelper = new ProductOpenHelper(ChaiUtil.getApplicationContext(), mDbName, null, mDbVersion);
                 } else {
-                    mChampacaOpenHelper = ChaiOpenHelper.get();
+                    mChaiOpenHelper = ChaiOpenHelper.get();
                 }
             }
         }
@@ -64,7 +64,7 @@ public class TableInfoFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_champaca_scroll);
+        mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_chai_scroll);
         mListView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mAdapter = new CommonRecyclerAdapter(getActivity(), null);
         mListView.setAdapter(mAdapter);
@@ -114,7 +114,7 @@ public class TableInfoFragment extends Fragment {
         if (!mDbName.equals(ChaiConst.CHAMPACA)) {
             productDb = mProductOpenHelper.getWritableDatabase();
         } else {
-            productDb = mChampacaOpenHelper.getWritableDatabase();
+            productDb = mChaiOpenHelper.getWritableDatabase();
         }
 
 

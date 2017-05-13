@@ -20,7 +20,7 @@ public class ChaiBaseActivity extends AppCompatActivity {
     }
 
     protected void setupToolBar() {
-        mToolbar = (Toolbar) findViewById(R.id.jp_cayhanecamel_champaca_toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.jp_cayhanecamel_chai_toolbar);
         setSupportActionBar(mToolbar);
     }
 

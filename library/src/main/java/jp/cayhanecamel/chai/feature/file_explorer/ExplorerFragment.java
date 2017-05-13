@@ -84,7 +84,7 @@ public class ExplorerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_explorer, container, false);
-        mRecyclerView = (RecyclerView) rootview.findViewById(R.id.jp_cayhanecamel_champaca_scroll);
+        mRecyclerView = (RecyclerView) rootview.findViewById(R.id.jp_cayhanecamel_chai_scroll);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(inflater.getContext()));
         return rootview;
     }
@@ -171,7 +171,7 @@ public class ExplorerFragment extends Fragment {
                 new CommonRecyclerAdapter.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, ItemDto item, long id) {
-                        FileItem fileItem = adapter.getFileItem((Integer) view.getTag(R.id.jp_cayhanecamel_champaca_tag_position));
+                        FileItem fileItem = adapter.getFileItem((Integer) view.getTag(R.id.jp_cayhanecamel_chai_tag_position));
                         File file = fileItem.getFile();
                         String fileName = file.getName();
                         if (fileName.equals(PathSegment.NAME_PARENT)) {
@@ -195,7 +195,7 @@ public class ExplorerFragment extends Fragment {
                 new CommonRecyclerAdapter.OnItemLongClickListener() {
                     @Override
                     public void onItemLongClick(View view, ItemDto itemDto, long id) {
-                        int position = (Integer) view.getTag(R.id.jp_cayhanecamel_champaca_tag_position);
+                        int position = (Integer) view.getTag(R.id.jp_cayhanecamel_chai_tag_position);
                         FileItem item = adapter.getFileItem(position);
                         FileActionFragment.show(getActivity(),
                                 item.getDisplayName(), item.getFile(),
@@ -317,7 +317,7 @@ public class ExplorerFragment extends Fragment {
                 return null;
             }
 
-            Drawable drawable = context.getResources().getDrawable(R.drawable.jp_cayhanecamel_champaca_ic_arrow_next);
+            Drawable drawable = context.getResources().getDrawable(R.drawable.jp_cayhanecamel_chai_ic_arrow_next);
             drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
             return drawable;
         }
@@ -400,7 +400,7 @@ public class ExplorerFragment extends Fragment {
             if (itemPosition < 0) return;
             ListItemView itemView = (ListItemView) holder.itemView;
             // TODO Notify itemPosition to listener
-            itemView.setTag(R.id.jp_cayhanecamel_champaca_tag_position, itemPosition);
+            itemView.setTag(R.id.jp_cayhanecamel_chai_tag_position, itemPosition);
 
             // Show an icon for a directory
             FileItem item = fileItems.get(itemPosition);

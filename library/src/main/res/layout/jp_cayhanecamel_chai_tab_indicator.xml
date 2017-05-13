@@ -6,5 +6,5 @@
           android:gravity="center"
           android:paddingLeft="16dp"
           android:paddingRight="16dp"
-          android:textColor="@drawable/jp_cayhanecamel_champaca_tab_selector"
+          android:textColor="@drawable/jp_cayhanecamel_chai_tab_selector"
           android:textSize="14sp"/>

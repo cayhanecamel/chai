@@ -15,7 +15,7 @@ public class ListHeaderView extends AbstractMenuItemView {
     public ListHeaderView(Context context) {
         super(context);
         inflate(getContext(), R.layout.jp_cayhanecamel_chai_list_header_view, this);
-        title = (TextView) findViewById(R.id.jp_cayhanecamel_champaca_title);
+        title = (TextView) findViewById(R.id.jp_cayhanecamel_chai_title);
     }
 
 

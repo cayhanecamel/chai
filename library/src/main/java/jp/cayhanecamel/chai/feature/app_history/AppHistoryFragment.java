@@ -65,11 +65,11 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
 
         View view = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_app_history, container, false);
 
-        mMultipleActions = (FloatingActionsMenu) view.findViewById(R.id.jp_cayhanecamel_champaca_multiple_actions);
-        FloatingActionButton filter = (FloatingActionButton) view.findViewById(R.id.jp_cayhanecamel_champaca_filter);
-        FloatingActionButton export = (FloatingActionButton) view.findViewById(R.id.jp_cayhanecamel_champaca_export);
-        FloatingActionButton delete = (FloatingActionButton) view.findViewById(R.id.jp_cayhanecamel_champaca_delete);
-        RecyclerView listView = (RecyclerView) view.findViewById(R.id.jp_cayhanecamel_champaca_scroll);
+        mMultipleActions = (FloatingActionsMenu) view.findViewById(R.id.jp_cayhanecamel_chai_multiple_actions);
+        FloatingActionButton filter = (FloatingActionButton) view.findViewById(R.id.jp_cayhanecamel_chai_filter);
+        FloatingActionButton export = (FloatingActionButton) view.findViewById(R.id.jp_cayhanecamel_chai_export);
+        FloatingActionButton delete = (FloatingActionButton) view.findViewById(R.id.jp_cayhanecamel_chai_delete);
+        RecyclerView listView = (RecyclerView) view.findViewById(R.id.jp_cayhanecamel_chai_scroll);
         listView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mAdapter = new AppHistoryAdapter(getActivity().getApplicationContext());
 
@@ -97,7 +97,7 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
             }
         });
 
-        mEmpty = view.findViewById(R.id.jp_cayhanecamel_champaca_empty);
+        mEmpty = view.findViewById(R.id.jp_cayhanecamel_chai_empty);
 
         listView.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener(new AppHistoryAdapter.OnItemClickListener() {
@@ -323,7 +323,7 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
 
         @Override
         public void onClick(View v) {
-            int position = (Integer) v.getTag(R.id.jp_cayhanecamel_champaca_tag_position);
+            int position = (Integer) v.getTag(R.id.jp_cayhanecamel_chai_tag_position);
             if (onItemClickListener != null) {
                 onItemClickListener.onItemClick(v, position, v.getId());
             }
@@ -367,28 +367,28 @@ public class AppHistoryFragment extends Fragment implements AppBarLayout.OnOffse
         @Override
         public void bind(Cursor cursor) {
             View view = this;
-            view.setTag(R.id.jp_cayhanecamel_champaca_tag_position, cursor.getPosition());
-            ImageView icon = (ImageView) view.findViewById(R.id.jp_cayhanecamel_champaca_icon);
+            view.setTag(R.id.jp_cayhanecamel_chai_tag_position, cursor.getPosition());
+            ImageView icon = (ImageView) view.findViewById(R.id.jp_cayhanecamel_chai_icon);
 
-            TextView txtType = (TextView) view.findViewById(R.id.jp_cayhanecamel_champaca_type);
-            TextView txtName = (TextView) view.findViewById(R.id.jp_cayhanecamel_champaca_name);
-            TextView txtCreateDate = (TextView) view.findViewById(R.id.jp_cayhanecamel_champaca_createdAt);
-            TextView txtContent = (TextView) view.findViewById(R.id.jp_cayhanecamel_champaca_content);
+            TextView txtType = (TextView) view.findViewById(R.id.jp_cayhanecamel_chai_type);
+            TextView txtName = (TextView) view.findViewById(R.id.jp_cayhanecamel_chai_name);
+            TextView txtCreateDate = (TextView) view.findViewById(R.id.jp_cayhanecamel_chai_createdAt);
+            TextView txtContent = (TextView) view.findViewById(R.id.jp_cayhanecamel_chai_content);
 
             AppInfo.Type type = AppInfo.Type.enumOf(cursor.getString(cursor.getColumnIndex("type")));
 
             if (type == AppInfo.Type.WEB_API_REQUEST || type == AppInfo.Type.WEB_VIEW_REQUEST) {
-                icon.setBackgroundResource(R.drawable.jp_cayhanecamel_champaca_ic_request);
+                icon.setBackgroundResource(R.drawable.jp_cayhanecamel_chai_ic_request);
 
             } else if (type == AppInfo.Type.WEB_API_RESPONSE
                     || type == AppInfo.Type.WEB_VIEW_RESPONSE) {
-                icon.setBackgroundResource(R.drawable.jp_cayhanecamel_champaca_ic_response);
+                icon.setBackgroundResource(R.drawable.jp_cayhanecamel_chai_ic_response);
 
             } else if (type == AppInfo.Type.GCM) {
-                icon.setBackgroundResource(R.drawable.jp_cayhanecamel_champaca_ic_gcm);
+                icon.setBackgroundResource(R.drawable.jp_cayhanecamel_chai_ic_gcm);
 
             } else {
-                icon.setBackgroundResource(R.drawable.jp_cayhanecamel_champaca_ic_local);
+                icon.setBackgroundResource(R.drawable.jp_cayhanecamel_chai_ic_local);
             }
 
             txtType.setText(cursor.getString(cursor.getColumnIndex("type")));

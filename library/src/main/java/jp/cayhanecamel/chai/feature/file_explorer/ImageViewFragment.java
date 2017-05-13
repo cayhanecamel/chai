@@ -40,8 +40,8 @@ public class ImageViewFragment extends DialogFragment {
         View view = inflater.inflate(R.layout.jp_cayhanecamel_chai_fragment_image_viewer, null,
                 false);
 
-        ImageView image = (ImageView) view.findViewById(R.id.jp_cayhanecamel_champaca_image);
-        TextView size = (TextView) view.findViewById(R.id.jp_cayhanecamel_champaca_size);
+        ImageView image = (ImageView) view.findViewById(R.id.jp_cayhanecamel_chai_image);
+        TextView size = (TextView) view.findViewById(R.id.jp_cayhanecamel_chai_size);
 
 
         BitmapFactory.Options options = new BitmapFactory.Options();

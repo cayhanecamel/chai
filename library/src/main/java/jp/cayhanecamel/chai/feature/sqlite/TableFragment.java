@@ -117,18 +117,18 @@ public class TableFragment extends Fragment implements AppBarLayout.OnOffsetChan
         db = mOpenHelper.getWritableDatabase();
 
 
-        multipleActions = (FloatingActionsMenu) getView().findViewById(R.id.jp_cayhanecamel_champaca_multiple_actions);
-        tableBase = (LinearLayout) getView().findViewById(R.id.jp_cayhanecamel_champaca_table_base);
-        tableLayout = (TableLayout) getView().findViewById(R.id.jp_cayhanecamel_champaca_table_layout);
-        titleText = (TextView) getView().findViewById(R.id.jp_cayhanecamel_champaca_action_bar_title);
+        multipleActions = (FloatingActionsMenu) getView().findViewById(R.id.jp_cayhanecamel_chai_multiple_actions);
+        tableBase = (LinearLayout) getView().findViewById(R.id.jp_cayhanecamel_chai_table_base);
+        tableLayout = (TableLayout) getView().findViewById(R.id.jp_cayhanecamel_chai_table_layout);
+        titleText = (TextView) getView().findViewById(R.id.jp_cayhanecamel_chai_action_bar_title);
 
-        filter = (FloatingActionButton) getView().findViewById(R.id.jp_cayhanecamel_champaca_filter);
+        filter = (FloatingActionButton) getView().findViewById(R.id.jp_cayhanecamel_chai_filter);
         insert = (FloatingActionButton) getView().findViewById(R.id.insert);
-        export = (FloatingActionButton) getView().findViewById(R.id.jp_cayhanecamel_champaca_export);
-        delete = (FloatingActionButton) getView().findViewById(R.id.jp_cayhanecamel_champaca_delete);
+        export = (FloatingActionButton) getView().findViewById(R.id.jp_cayhanecamel_chai_export);
+        delete = (FloatingActionButton) getView().findViewById(R.id.jp_cayhanecamel_chai_delete);
 
 
-        filter.findViewById(R.id.jp_cayhanecamel_champaca_filter).setOnClickListener(new View.OnClickListener() {
+        filter.findViewById(R.id.jp_cayhanecamel_chai_filter).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 filter();
@@ -152,7 +152,7 @@ public class TableFragment extends Fragment implements AppBarLayout.OnOffsetChan
             }
         });
 
-        delete.findViewById(R.id.jp_cayhanecamel_champaca_delete).setOnClickListener(new View.OnClickListener() {
+        delete.findViewById(R.id.jp_cayhanecamel_chai_delete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 delete();
@@ -191,10 +191,10 @@ public class TableFragment extends Fragment implements AppBarLayout.OnOffsetChan
 
         if (pageTitle == null) {
             tableBase.addView(View.inflate(getActivity(), R.layout.jp_cayhanecamel_chai_table_page, null));
-            pageLayout = (LinearLayout) getView().findViewById(R.id.jp_cayhanecamel_champaca_pageLayout);
-            pageTitle = (TextView) getView().findViewById(R.id.jp_cayhanecamel_champaca_pageTitle);
-            back = (Button) getView().findViewById(R.id.jp_cayhanecamel_champaca_back);
-            next = (Button) getView().findViewById(R.id.jp_cayhanecamel_champaca_next);
+            pageLayout = (LinearLayout) getView().findViewById(R.id.jp_cayhanecamel_chai_pageLayout);
+            pageTitle = (TextView) getView().findViewById(R.id.jp_cayhanecamel_chai_pageTitle);
+            back = (Button) getView().findViewById(R.id.jp_cayhanecamel_chai_back);
+            next = (Button) getView().findViewById(R.id.jp_cayhanecamel_chai_next);
             next.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -340,23 +340,23 @@ public class TableFragment extends Fragment implements AppBarLayout.OnOffsetChan
 
     private TextView getCellView() {
         TextView cell = getCellBaseView();
-        cell.setBackgroundResource(R.drawable.jp_cayhanecamel_champaca_table_cell_shape);
+        cell.setBackgroundResource(R.drawable.jp_cayhanecamel_chai_table_cell_shape);
         return cell;
     }
 
     private TextView getHeaderView() {
         TextView cell = getCellBaseView();
-        cell.setBackgroundResource(R.drawable.jp_cayhanecamel_champaca_table_header_shape);
+        cell.setBackgroundResource(R.drawable.jp_cayhanecamel_chai_table_header_shape);
         return cell;
     }
 
     private TextView getCellBaseView() {
         TextView cell = new TextView(getActivity());
         Resources resources = getActivity().getResources();
-        int cellLRPadding = resources.getDimensionPixelSize(R.dimen.jp_cayhanecamel_champaca_table_cell_lr_padding);
-        int cellTBPadding = resources.getDimensionPixelSize(R.dimen.jp_cayhanecamel_champaca_table_cell_tb_padding);
+        int cellLRPadding = resources.getDimensionPixelSize(R.dimen.jp_cayhanecamel_chai_table_cell_lr_padding);
+        int cellTBPadding = resources.getDimensionPixelSize(R.dimen.jp_cayhanecamel_chai_table_cell_tb_padding);
         cell.setGravity(Gravity.CENTER);
-        cell.setTextColor(resources.getColor(R.color.jp_cayhanecamel_champaca_txt_color_gy01));
+        cell.setTextColor(resources.getColor(R.color.jp_cayhanecamel_chai_txt_color_gy01));
         cell.setPadding(cellLRPadding, cellTBPadding, cellLRPadding, cellTBPadding);
         return cell;
     }

@@ -37,7 +37,7 @@ public class SharedPrefsRootFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_champaca_scroll);
+        mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_chai_scroll);
         mListView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mAdapter = new CommonRecyclerAdapter(getActivity(), null);
         mListView.setAdapter(mAdapter);

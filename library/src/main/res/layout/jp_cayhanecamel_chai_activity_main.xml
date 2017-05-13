@@ -11,25 +11,25 @@
 
         <android.support.v4.view.ViewPager
             android:layout_gravity="fill_vertical"
-            android:id="@+id/jp_cayhanecamel_champaca_pager"
+            android:id="@+id/jp_cayhanecamel_chai_pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </FrameLayout>
 
     <android.support.design.widget.AppBarLayout
-        android:id="@+id/jp_cayhanecamel_champaca_header"
+        android:id="@+id/jp_cayhanecamel_chai_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/jp_cayhanecamel_champaca_white"
+        android:background="@color/jp_cayhanecamel_chai_white"
         android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/jp_cayhanecamel_champaca_toolbar"
+            android:id="@+id/jp_cayhanecamel_chai_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/jp_cayhanecamel_champaca_action_bar_color"
+            android:background="@color/jp_cayhanecamel_chai_action_bar_color"
             android:minHeight="?attr/actionBarSize"
-            android:textColor="@color/jp_cayhanecamel_champaca_txt_color_wf01"
+            android:textColor="@color/jp_cayhanecamel_chai_txt_color_wf01"
             app:layout_scrollFlags="scroll|enterAlways" />
 
         <com.google.samples.apps.iosched.ui.widget.SlidingTabLayout

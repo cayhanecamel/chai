@@ -5,14 +5,14 @@
 
     <TextView
         android:id="@+id/title"
-        style="@style/jp_cayhanecamel_champaca_txt_section_title_gray"
+        style="@style/jp_cayhanecamel_chai_txt_section_title_gray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="title"/>
 
     <EditText
         android:id="@+id/value"
-        style="@style/jp_cayhanecamel_champaca_txt_main"
+        style="@style/jp_cayhanecamel_chai_txt_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:singleLine="true"

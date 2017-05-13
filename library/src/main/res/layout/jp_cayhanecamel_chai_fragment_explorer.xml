@@ -2,13 +2,13 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/jp_cayhanecamel_champaca_white">
+    android:background="@color/jp_cayhanecamel_chai_white">
 
     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/jp_cayhanecamel_champaca_scroll"
+        android:id="@+id/jp_cayhanecamel_chai_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/jp_cayhanecamel_champaca_white"
+        android:background="@color/jp_cayhanecamel_chai_white"
         android:divider="@null"
         android:listSelector="@android:color/transparent"
         android:paddingBottom="4dp"

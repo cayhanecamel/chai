@@ -22,9 +22,9 @@ public class ListItemView extends AbstractMenuItemView {
     public ListItemView(Context context) {
         super(context);
         inflate(getContext(), R.layout.jp_cayhanecamel_chai_list_item_app_info, this);
-        title = (TextView) findViewById(R.id.jp_cayhanecamel_champaca_title);
-        value = (TextView) findViewById(R.id.jp_cayhanecamel_champaca_value);
-        divider = (View) findViewById(R.id.jp_cayhanecamel_champaca_divider);
+        title = (TextView) findViewById(R.id.jp_cayhanecamel_chai_title);
+        value = (TextView) findViewById(R.id.jp_cayhanecamel_chai_value);
+        divider = (View) findViewById(R.id.jp_cayhanecamel_chai_divider);
 
     }
 
@@ -34,16 +34,16 @@ public class ListItemView extends AbstractMenuItemView {
         value.setText(itemDto.value);
         ViewGroup.LayoutParams layoutParams = divider.getLayoutParams();
         if (itemDto.type == ItemDto.Type.ContentEnd) {
-            layoutParams.height = getResources().getDimensionPixelSize(R.dimen.jp_cayhanecamel_champaca_divider_end);
+            layoutParams.height = getResources().getDimensionPixelSize(R.dimen.jp_cayhanecamel_chai_divider_end);
         } else {
-            layoutParams.height = getResources().getDimensionPixelSize(R.dimen.jp_cayhanecamel_champaca_divider);
+            layoutParams.height = getResources().getDimensionPixelSize(R.dimen.jp_cayhanecamel_chai_divider);
         }
 
         if (TextUtils.isEmpty(title.getText())) {
             title.setVisibility(View.GONE);
         }
         // For on click
-        setTag(R.id.jp_cayhanecamel_champaca_tag_item, itemDto);
+        setTag(R.id.jp_cayhanecamel_chai_tag_item, itemDto);
     }
 
     public void setCompoundDrawableRight(Drawable drawable) {

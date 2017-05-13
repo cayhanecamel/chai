@@ -13,7 +13,7 @@ public class AppHistory implements BaseColumns {
 
     public static final String AUTHORITY_BASE = ".data.provider.app_history_provider";
 
-    public static String AUTHORITY = "jp.cayhanecamel.champaca" + AUTHORITY_BASE;
+    public static String AUTHORITY = "jp.cayhanecamel.chai" + AUTHORITY_BASE;
 
     public static Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + APPLICATION_HISTORY);
 

@@ -42,7 +42,7 @@ public class CommonRecyclerAdapter extends CollectionRecyclerAdapter<ItemDto, Ab
             @Override
             public void onClick(View v) {
                 if (onItemClickListener != null) {
-                    onItemClickListener.onItemClick(v, (ItemDto) v.getTag(R.id.jp_cayhanecamel_champaca_tag_item), v.getId());
+                    onItemClickListener.onItemClick(v, (ItemDto) v.getTag(R.id.jp_cayhanecamel_chai_tag_item), v.getId());
                 }
             }
         };
@@ -50,7 +50,7 @@ public class CommonRecyclerAdapter extends CollectionRecyclerAdapter<ItemDto, Ab
             @Override
             public boolean onLongClick(View v) {
                 if (onItemLongClickListener != null) {
-                    onItemLongClickListener.onItemLongClick(v, (ItemDto) v.getTag(R.id.jp_cayhanecamel_champaca_tag_item), v.getId());
+                    onItemLongClickListener.onItemLongClick(v, (ItemDto) v.getTag(R.id.jp_cayhanecamel_chai_tag_item), v.getId());
                 }
                 return false;
             }

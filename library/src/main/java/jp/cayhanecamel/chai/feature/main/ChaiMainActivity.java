@@ -27,7 +27,7 @@ import jp.cayhanecamel.chai.R;
 
 public class ChaiMainActivity extends ChaiBaseActivity {
 
-    public static final String TAG = "ChampacaMainActivity";
+    public static final String TAG = "ChaiMainActivity";
 
     private AppBarLayout mHeaderView;
     private ViewPager mPager;
@@ -39,17 +39,17 @@ public class ChaiMainActivity extends ChaiBaseActivity {
         setContentView(R.layout.jp_cayhanecamel_chai_activity_main);
 
         setupToolBar();
-        getSupportActionBar().setTitle("Champaca Debug Menu");
+        getSupportActionBar().setTitle("Chai Debug Menu");
 
-        mHeaderView = (AppBarLayout) findViewById(R.id.jp_cayhanecamel_champaca_header);
-        ViewCompat.setElevation(mHeaderView, getResources().getDimension(R.dimen.jp_cayhanecamel_champaca_toolbar_elevation));
+        mHeaderView = (AppBarLayout) findViewById(R.id.jp_cayhanecamel_chai_header);
+        ViewCompat.setElevation(mHeaderView, getResources().getDimension(R.dimen.jp_cayhanecamel_chai_toolbar_elevation));
         mPagerAdapter = new NavigationAdapter(getSupportFragmentManager(), getApplicationContext(), mHeaderView);
-        mPager = (ViewPager) findViewById(R.id.jp_cayhanecamel_champaca_pager);
+        mPager = (ViewPager) findViewById(R.id.jp_cayhanecamel_chai_pager);
         mPager.setAdapter(mPagerAdapter);
 
         SlidingTabLayout slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
         slidingTabLayout.setCustomTabView(R.layout.jp_cayhanecamel_chai_tab_indicator, android.R.id.text1);
-        slidingTabLayout.setSelectedIndicatorColors(getResources().getColor(R.color.jp_cayhanecamel_champaca_tab_accent));
+        slidingTabLayout.setSelectedIndicatorColors(getResources().getColor(R.color.jp_cayhanecamel_chai_tab_accent));
         slidingTabLayout.setDistributeEvenly(true);
         slidingTabLayout.setViewPager(mPager);
 

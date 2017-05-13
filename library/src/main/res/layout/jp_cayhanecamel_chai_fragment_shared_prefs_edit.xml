@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:background="@color/jp_cayhanecamel_champaca_white"
+              android:background="@color/jp_cayhanecamel_chai_white"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_gravity="center_horizontal"
@@ -8,56 +8,56 @@
               android:orientation="vertical">
 
     <TextView
-        android:id="@+id/jp_cayhanecamel_champaca_file_name"
+        android:id="@+id/jp_cayhanecamel_chai_file_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy01"
+        android:textColor="@color/jp_cayhanecamel_chai_txt_color_gy01"
         android:layout_margin="5dp"/>
 
     <TextView
-        android:id="@+id/jp_cayhanecamel_champaca_pref_key"
+        android:id="@+id/jp_cayhanecamel_chai_pref_key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy02"
+        android:textColor="@color/jp_cayhanecamel_chai_txt_color_gy02"
         android:layout_margin="2dp"/>
 
     <EditText
-        android:id="@+id/jp_cayhanecamel_champaca_pref_value"
+        android:id="@+id/jp_cayhanecamel_chai_pref_value"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_margin="2dp"
-        android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy02"
+        android:textColor="@color/jp_cayhanecamel_chai_txt_color_gy02"
         android:gravity="left|bottom"/>
 
     <RadioGroup
-        android:id="@+id/jp_cayhanecamel_champaca_radiogroup"
+        android:id="@+id/jp_cayhanecamel_chai_radiogroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="2dp">
 
         <RadioButton
-            android:id="@+id/jp_cayhanecamel_champaca_radiobutton_true"
+            android:id="@+id/jp_cayhanecamel_chai_radiobutton_true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/jp_cayhanecamel_champaca_bg_color_gy01"
+            android:textColor="@color/jp_cayhanecamel_chai_bg_color_gy01"
             android:text="@string/jp_cayhanecamel_chai_shared_prefs_edit_true"/>
 
         <RadioButton
-            android:id="@+id/jp_cayhanecamel_champaca_radiobutton_false"
+            android:id="@+id/jp_cayhanecamel_chai_radiobutton_false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/jp_cayhanecamel_champaca_txt_color_gy01"
+            android:textColor="@color/jp_cayhanecamel_chai_txt_color_gy01"
             android:checked="true"
             android:text="@string/jp_cayhanecamel_chai_shared_prefs_edit_false"/>
 
     </RadioGroup>
 
     <Button
-        android:id="@+id/jp_cayhanecamel_champaca_pref_update_btn"
+        android:id="@+id/jp_cayhanecamel_chai_pref_update_btn"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
-        android:textColor="@color/jp_cayhanecamel_champaca_white"
+        android:textColor="@color/jp_cayhanecamel_chai_white"
         android:text="@string/jp_cayhanecamel_chai_shared_prefs_edit_btn"/>
 
 </LinearLayout>

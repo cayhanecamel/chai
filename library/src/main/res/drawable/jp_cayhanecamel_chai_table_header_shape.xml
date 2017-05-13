@@ -8,6 +8,6 @@
         android:color="#000000">
     </stroke>
 
-    <solid android:color="@color/jp_cayhanecamel_champaca_bg_color_gy02"/>
+    <solid android:color="@color/jp_cayhanecamel_chai_bg_color_gy02"/>
 </shape>
 

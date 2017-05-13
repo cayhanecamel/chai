@@ -52,13 +52,13 @@ public class AppInfoFragment extends Fragment implements AppBarLayout.OnOffsetCh
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mMultipleActions = (FloatingActionsMenu) getView().findViewById(R.id.jp_cayhanecamel_champaca_multiple_actions);
-        mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_champaca_scroll);
+        mMultipleActions = (FloatingActionsMenu) getView().findViewById(R.id.jp_cayhanecamel_chai_multiple_actions);
+        mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_chai_scroll);
         mListView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mAdapter = new CommonRecyclerAdapter(getActivity().getApplicationContext(), null, true);
         mListView.setAdapter(mAdapter);
 
-        getView().findViewById(R.id.jp_cayhanecamel_champaca_export).setOnClickListener(new View.OnClickListener() {
+        getView().findViewById(R.id.jp_cayhanecamel_chai_export).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 export();

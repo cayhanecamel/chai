@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
-        toolbar.setTitle(R.string.jp_cayhanecamel_champaca_app_name)
+        toolbar.setTitle(R.string.jp_cayhanecamel_chai_app_name)
 
         findViewById(R.id.boot).setOnClickListener { this@MainActivity.startActivity(Intent(applicationContext, ChaiMainActivity::class.java)) }
 
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById(R.id.add_app_history_api_dummy).setOnClickListener {
-            // Champaca用
+            // Chai用
             val req = AppInfo()
             req.server = "sever url"
             req.apiName = "api name"
@@ -137,13 +137,13 @@ class MainActivity : AppCompatActivity() {
         findViewById(R.id.add_file_explorer_internal).setOnClickListener {
             // Files
             var dir = filesDir
-            writeText(File(dir, "dummy.txt"), "This is created by Champaca for Files Directory")
-            writePng(File(dir, "dummy.png"), BitmapFactory.decodeResource(resources, R.drawable.jp_cayhanecamel_champaca_ic_launcher))
+            writeText(File(dir, "dummy.txt"), "This is created by Chai for Files Directory")
+            writePng(File(dir, "dummy.png"), BitmapFactory.decodeResource(resources, R.drawable.jp_cayhanecamel_chai_ic_launcher))
 
             // Cache
             dir = cacheDir
-            writeText(File(dir, "dummy.txt"), "This is created by Champaca for Cache Directory")
-            writePng(File(dir, "dummy.png"), BitmapFactory.decodeResource(resources, R.drawable.jp_cayhanecamel_champaca_ic_launcher))
+            writeText(File(dir, "dummy.txt"), "This is created by Chai for Cache Directory")
+            writePng(File(dir, "dummy.png"), BitmapFactory.decodeResource(resources, R.drawable.jp_cayhanecamel_chai_ic_launcher))
 
             Toast.makeText(applicationContext, getString(R.string.added_files_dummy_internal), Toast.LENGTH_SHORT).show()
         }
@@ -151,13 +151,13 @@ class MainActivity : AppCompatActivity() {
         findViewById(R.id.add_file_explorer_external).setOnClickListener {
             // Files
             var dir: File = getExternalFilesDir(null)
-            writeText(File(dir, "dummy.txt"), "This is created by Champaca for External Files Directory")
-            writePng(File(dir, "dummy.png"), BitmapFactory.decodeResource(resources, R.drawable.jp_cayhanecamel_champaca_ic_launcher))
+            writeText(File(dir, "dummy.txt"), "This is created by Chai for External Files Directory")
+            writePng(File(dir, "dummy.png"), BitmapFactory.decodeResource(resources, R.drawable.jp_cayhanecamel_chai_ic_launcher))
 
             // Cache
             dir = externalCacheDir
-            writeText(File(dir, "dummy.txt"), "This is created by Champaca for External Cache Directory")
-            writePng(File(dir, "dummy.png"), BitmapFactory.decodeResource(resources, R.drawable.jp_cayhanecamel_champaca_ic_launcher))
+            writeText(File(dir, "dummy.txt"), "This is created by Chai for External Cache Directory")
+            writePng(File(dir, "dummy.png"), BitmapFactory.decodeResource(resources, R.drawable.jp_cayhanecamel_chai_ic_launcher))
 
             Toast.makeText(applicationContext, getString(R.string.added_files_dummy_external), Toast.LENGTH_SHORT).show()
         }

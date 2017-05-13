@@ -24,7 +24,7 @@ public class ProductOpenHelper extends SQLiteOpenHelper {
 //    public static ProductOpenHelper get(String dbName, int dbVersion) {
 //        if (sInstance == null) {
 //            sInstance = new ProductOpenHelper(
-//                    ChampacaUtil.getApplicationContext(),
+//                    ChaiUtil.getApplicationContext(),
 //                    dbName,
 //                    null,
 //                    dbVersion);

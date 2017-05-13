@@ -2,11 +2,11 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:state_pressed="true">
-        <color android:color="@color/jp_cayhanecamel_champaca_item_pressed_background"/>
+        <color android:color="@color/jp_cayhanecamel_chai_item_pressed_background"/>
     </item>
 
     <item android:state_pressed="false">
-        <color android:color="@color/jp_cayhanecamel_champaca_white"/>
+        <color android:color="@color/jp_cayhanecamel_chai_white"/>
     </item>
 
 

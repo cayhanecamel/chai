@@ -23,8 +23,8 @@ public class TableActivity extends ChaiBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.jp_cayhanecamel_chai_activity_base);
-        appBarLayout = (AppBarLayout) findViewById(R.id.jp_cayhanecamel_champaca_header);
-        ViewCompat.setElevation(appBarLayout, getResources().getDimension(R.dimen.jp_cayhanecamel_champaca_toolbar_elevation));
+        appBarLayout = (AppBarLayout) findViewById(R.id.jp_cayhanecamel_chai_header);
+        ViewCompat.setElevation(appBarLayout, getResources().getDimension(R.dimen.jp_cayhanecamel_chai_toolbar_elevation));
 
         setupToolBar();
         if (savedInstanceState != null) {

@@ -41,7 +41,7 @@ public class ChaiConfig {
 
     private static SharedPreferences getSP() {
         return ChaiUtil.getApplicationContext().getSharedPreferences(
-                "ChampacaConfig", Context.MODE_PRIVATE);
+                "ChaiConfig", Context.MODE_PRIVATE);
     }
 
     /**

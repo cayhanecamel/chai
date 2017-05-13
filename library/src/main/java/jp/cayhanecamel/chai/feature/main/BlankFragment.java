@@ -26,7 +26,7 @@ public class BlankFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        TextView comment = (TextView) getView().findViewById(R.id.jp_cayhanecamel_champaca_info);
+        TextView comment = (TextView) getView().findViewById(R.id.jp_cayhanecamel_chai_info);
 
         Bundle extras = getArguments();
         String info = ((String) extras.getSerializable(INFO));

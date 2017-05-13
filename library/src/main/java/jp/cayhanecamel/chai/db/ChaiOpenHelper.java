@@ -15,7 +15,7 @@ import jp.cayhanecamel.chai.util.ChaiUtil;
  */
 public class ChaiOpenHelper extends SQLiteOpenHelper {
 
-    public static final String DB_NAME = "champaca.sqlite";
+    public static final String DB_NAME = "chai.sqlite";
 
     public static final int DB_VERSION = 1;
 

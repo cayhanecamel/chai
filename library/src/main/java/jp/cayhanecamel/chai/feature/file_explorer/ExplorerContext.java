@@ -72,7 +72,7 @@ public class ExplorerContext {
         TextView breadcrumb = new TextView(context);
         breadcrumb.setText(buf);
         breadcrumb.setMovementMethod(LinkMovementMethod.getInstance());
-        breadcrumb.setTextColor(context.getResources().getColor(R.color.jp_cayhanecamel_champaca_half_black));
+        breadcrumb.setTextColor(context.getResources().getColor(R.color.jp_cayhanecamel_chai_half_black));
         container.addView(breadcrumb);
 
         horizontalScrollView.addView(container);

@@ -67,7 +67,7 @@ public class SharedPrefsFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_champaca_scroll);
+        mListView = (RecyclerView) getView().findViewById(R.id.jp_cayhanecamel_chai_scroll);
         mListView.setLayoutManager(new LinearLayoutManager(ChaiUtil.getApplicationContext()));
 
         Bundle args = getArguments();
