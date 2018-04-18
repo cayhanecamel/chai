@@ -1,15 +1,16 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 25
-        versionCode 1
-        versionName "25.0.1"
+        targetSdkVersion 27
+        versionCode 2
+        versionName "27.0.0"
     }
     buildTypes {
         release {
@@ -19,16 +20,16 @@ android {
     }
 }
 
-def SupportLibraryVersion = '25.0.0'
+def SupportLibraryVersion = '27.1.0'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:appcompat-v7:$SupportLibraryVersion"
-    compile "com.android.support:recyclerview-v7:$SupportLibraryVersion"
-    compile "com.android.support:design:$SupportLibraryVersion"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:$SupportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$SupportLibraryVersion"
+    implementation "com.android.support:design:$SupportLibraryVersion"
 
-    compile 'com.getbase:floatingactionbutton:1.9.1'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.getbase:floatingactionbutton:1.9.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
 }
 repositories {

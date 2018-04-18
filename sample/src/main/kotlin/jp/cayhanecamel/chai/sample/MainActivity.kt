@@ -7,16 +7,19 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.preference.PreferenceManager
-import android.support.v4.util.AtomicFile
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import android.support.v4.util.AtomicFile
+import android.support.v7.widget.Toolbar
 import jp.cayhanecamel.chai.feature.app_history.AppHistoryUtil
 import jp.cayhanecamel.chai.feature.app_history.AppInfo
 import jp.cayhanecamel.chai.feature.main.ChaiMainActivity
+
 import jp.cayhanecamel.chai.util.ChaiLog
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.main_content.*
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.File
@@ -37,9 +40,9 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         toolbar.setTitle(R.string.jp_cayhanecamel_chai_app_name)
 
-        findViewById(R.id.boot).setOnClickListener { this@MainActivity.startActivity(Intent(applicationContext, ChaiMainActivity::class.java)) }
+        boot.setOnClickListener({ this@MainActivity.startActivity(Intent(applicationContext, ChaiMainActivity::class.java)) })
 
-        findViewById(R.id.add_record).setOnClickListener {
+        add_record.setOnClickListener {
             mySQLiteOpenHelper = MySQLiteOpenHelper(applicationContext)
             val db = mySQLiteOpenHelper!!.writableDatabase
 
@@ -53,12 +56,12 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, getString(R.string.added_record), Toast.LENGTH_SHORT).show()
         }
 
-        findViewById(R.id.add_app_history).setOnClickListener {
+        add_app_history.setOnClickListener {
             ChaiLog.i("MainActivity#add_log clicked")
             Toast.makeText(applicationContext, getString(R.string.added_app_history), Toast.LENGTH_SHORT).show()
         }
 
-        findViewById(R.id.add_app_history_api_dummy).setOnClickListener {
+        add_app_history_api_dummy.setOnClickListener {
             // Chai用
             val req = AppInfo()
             req.server = "sever url"
@@ -97,7 +100,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, getString(R.string.added_app_history_api_dummy), Toast.LENGTH_SHORT).show()
         }
 
-        findViewById(R.id.add_app_history_gcm_dummy).setOnClickListener {
+        add_app_history_gcm_dummy.setOnClickListener {
             val info = AppInfo()
             info.type = AppInfo.Type.GCM
             info.content = "GCM Text"
@@ -108,7 +111,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        findViewById(R.id.add_shared_prefs_dummy).setOnClickListener {
+        add_shared_prefs_dummy.setOnClickListener {
             PreferenceManager.getDefaultSharedPreferences(applicationContext).edit()
                     .putBoolean("data.boolean", true)
                     .putFloat("data.float", 33.4f)
@@ -121,7 +124,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, getString(R.string.added_shared_prefs_dummy), Toast.LENGTH_SHORT).show()
         }
 
-        findViewById(R.id.add_shared_prefs_named_dummy).setOnClickListener {
+        add_shared_prefs_named_dummy.setOnClickListener {
             getSharedPreferences("named", Context.MODE_PRIVATE).edit()
                     .putBoolean("data.boolean", false)
                     .putFloat("data.float", 129.3f)
@@ -134,7 +137,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, getString(R.string.added_shared_prefs_named_dummy), Toast.LENGTH_SHORT).show()
         }
 
-        findViewById(R.id.add_file_explorer_internal).setOnClickListener {
+        add_file_explorer_internal.setOnClickListener {
             // Files
             var dir = filesDir
             writeText(File(dir, "dummy.txt"), "This is created by Chai for Files Directory")
@@ -148,7 +151,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, getString(R.string.added_files_dummy_internal), Toast.LENGTH_SHORT).show()
         }
 
-        findViewById(R.id.add_file_explorer_external).setOnClickListener {
+        add_file_explorer_external.setOnClickListener {
             // Files
             var dir: File = getExternalFilesDir(null)
             writeText(File(dir, "dummy.txt"), "This is created by Chai for External Files Directory")
@@ -211,7 +214,7 @@ class MainActivity : AppCompatActivity() {
         var output: FileOutputStream? = null
         try {
             output = atomicFile.startWrite()
-            output!!.write(bytes)
+            output.write(bytes)
             atomicFile.finishWrite(output)
         } catch (e: IOException) {
             if (output != null) {
