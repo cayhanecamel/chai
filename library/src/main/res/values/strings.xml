@@ -16,7 +16,7 @@
     <string name="jp_cayhanecamel_chai_limit">limit</string>
     <string name="jp_cayhanecamel_chai_unselect">unselect</string>
     <string name="jp_cayhanecamel_chai_deselect_all">deselect all</string>
-    <string name="jp_cayhanecamel_chai_no_app_history">There is no jp.cayhanecamel.chai.sample.App history</string>
+    <string name="jp_cayhanecamel_chai_no_app_history">There is no App history</string>
 
     <string name="jp_cayhanecamel_chai_apk_info">APK Info</string>
     <string name="jp_cayhanecamel_chai_device_info">Device Info</string>
@@ -33,14 +33,14 @@
     <string name="jp_cayhanecamel_chai_ok">ok</string>
 
 
-    <string name="jp_cayhanecamel_chai_app_history">jp.cayhanecamel.chai.sample.App History</string>
-    <string name="jp_cayhanecamel_chai_app_info">jp.cayhanecamel.chai.sample.App Info</string>
+    <string name="jp_cayhanecamel_chai_app_history">App History</string>
+    <string name="jp_cayhanecamel_chai_app_info">App Info</string>
     <string name="jp_cayhanecamel_chai_sqlite_none">SQLite</string>
     <string name="jp_cayhanecamel_chai_sqlite">SQLite(%s)</string>
     <string name="jp_cayhanecamel_chai_shared_prefs">Shared Prefs</string>
     <string name="jp_cayhanecamel_chai_file_explorer">File Explorer</string>
 
-    <string name="jp_cayhanecamel_chai_app_history_filter">jp.cayhanecamel.chai.sample.App History Filter</string>
+    <string name="jp_cayhanecamel_chai_app_history_filter">App History Filter</string>
 
     <string name="jp_cayhanecamel_chai_shared_prefs_not_use">Shared Preference is not used</string>
     <string name="jp_cayhanecamel_chai_sqlite_not_specified">SQLite is not specified</string>

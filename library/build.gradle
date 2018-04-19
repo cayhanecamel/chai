@@ -28,7 +28,7 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:$SupportLibraryVersion"
     implementation "com.android.support:design:$SupportLibraryVersion"
 
-    implementation 'com.getbase:floatingactionbutton:1.9.1'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
 }

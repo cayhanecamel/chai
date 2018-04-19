@@ -39,7 +39,7 @@ public class ChaiMainActivity extends ChaiBaseActivity {
         setContentView(R.layout.jp_cayhanecamel_chai_activity_main);
 
         setupToolBar();
-        getSupportActionBar().setTitle("Chai Debug Menu");
+        getSupportActionBar().setTitle("Debug Menu");
 
         mHeaderView = (AppBarLayout) findViewById(R.id.jp_cayhanecamel_chai_header);
         ViewCompat.setElevation(mHeaderView, getResources().getDimension(R.dimen.jp_cayhanecamel_chai_toolbar_elevation));
